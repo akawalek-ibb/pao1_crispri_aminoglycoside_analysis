@@ -1,0 +1,117 @@
+"module_id"	"category"	"function_description"	"n_DiMA_contrasts"	"max_abs_delta"	"minimum_q"	"selected_for_Fig6C"
+"NarL"	"Amino Acid and Nucleotide Biosynthesis"	"Denitrification (Nitrate)"	1	5.30326497495399	0.000146811358110176	TRUE
+"DhcR"	"Amino Acid and Nucleotide Biosynthesis"	"Carnitine catabolism"	1	5.25811617212929	3.63890029191812e-09	TRUE
+"Anr-4"	"Amino Acid and Nucleotide Biosynthesis"	"Nitrite reductases"	0	4.61610468899214	0.000303736120802646	FALSE
+"Anr-2"	"Amino Acid and Nucleotide Biosynthesis"	"Molybdenum cofactor biosynthesis"	0	4.40047052470632	0.0018585056207046	FALSE
+"AmiE"	"Amino Acid and Nucleotide Biosynthesis"	"AHL synthesis"	0	4.37823529709276	5.56823085147138e-06	FALSE
+"LiuR"	"Amino Acid and Nucleotide Biosynthesis"	"Homogentisate pathway"	0	3.76913491419162	8.01216121453223e-06	FALSE
+"DguR"	"Amino Acid and Nucleotide Biosynthesis"	"D-glu utilization"	0	3.72337628993945	0.0020110059130481	FALSE
+"PhhR-1"	"Amino Acid and Nucleotide Biosynthesis"	"Phenylalanine, tyrosine and tryptophan biosynthesis"	0	3.33742343565807	4.31964167030388e-05	FALSE
+"Anr-3"	"Amino Acid and Nucleotide Biosynthesis"	"Nitrate reductases"	0	2.42396192630698	0.00141722760086944	FALSE
+"EutR"	"Amino Acid and Nucleotide Biosynthesis"	"Ethanolamine catabolism"	0	2.18406284764683	0.000158019252362004	FALSE
+"PrrF"	"Amino Acid and Nucleotide Biosynthesis"	"2-Oxocarboxylic acid metabolism"	0	2.01616828862758	0.000219786652288371	FALSE
+"CbrB"	"Amino Acid and Nucleotide Biosynthesis"	"Polyamine catabolism"	0	1.8638183106768	0.000374935800099327	FALSE
+"ErbR-1"	"Amino Acid and Nucleotide Biosynthesis"	"Pyrroloquinoline quinone biosynthesis"	0	1.84496619210732	2.26696997074016e-05	FALSE
+"ArgR-1"	"Amino Acid and Nucleotide Biosynthesis"	"Arginine catabolism and biosynthesis"	0	1.77908930918275	0.000565818609302671	FALSE
+"MmsR"	"Amino Acid and Nucleotide Biosynthesis"	"Carnitine catabolism"	0	1.6347588051966	0.00026558672815209	FALSE
+"EatR"	"Amino Acid and Nucleotide Biosynthesis"	"Ethanolamine utilization"	0	1.32347713578898	0.000952600253292388	FALSE
+"SouR"	"Amino Acid and Nucleotide Biosynthesis"	"Sarcosine Catabolism"	0	1.23558256342107	0.0331420144874615	FALSE
+"HypR"	"Amino Acid and Nucleotide Biosynthesis"	"Redox-sensing"	0	1.11058521106372	0.0039472473162775	FALSE
+"GcsR"	"Amino Acid and Nucleotide Biosynthesis"	"Glycine cleavage"	0	1.0163381853943	0.00312726165015831	FALSE
+"AauR"	"Amino Acid and Nucleotide Biosynthesis"	"D-Glutamate transport"	0	0.963559528697364	0.0120877245252457	FALSE
+"HutC"	"Amino Acid and Nucleotide Biosynthesis"	"Histidine utilization"	0	0.892462525207338	0.00308115821104412	FALSE
+"Lrp"	"Amino Acid and Nucleotide Biosynthesis"	"Alanine catabolism"	0	0.687299367056101	0.0543215189683593	FALSE
+"CzcR"	"Antibiotic Resistance"	"Resistance-nodulation-cell division (RND) divalent metal cation"	1	6.35942309502669	1.21116351931409e-07	TRUE
+"MexS-2"	"Antibiotic Resistance"	"RND efflux pump"	0	3.63313733136167	1.1978390760781e-06	FALSE
+"CpxR"	"Antibiotic Resistance"	"Various stress response"	0	3.58872088922368	3.70766749842451e-08	FALSE
+"PmrA"	"Antibiotic Resistance"	"Polymyxins resistance"	0	3.44259435540787	2.77590381884174e-05	FALSE
+"EsrC"	"Antibiotic Resistance"	"RND efflux pump"	0	1.85431745344208	1.9715144257356e-07	FALSE
+"MexS-1"	"Antibiotic Resistance"	"RND efflux pump"	0	1.71629963072017	0.00406262286107275	FALSE
+"AmpC"	"Antibiotic Resistance"	"beta-lactamases"	0	1.37747693762858	0.000565818609302671	FALSE
+"MexZ"	"Antibiotic Resistance"	"Aminoglycoside resistance"	0	1.28203343007406	5.09615047526293e-05	FALSE
+"SoxR"	"Antibiotic Resistance"	"RND efflux pump"	0	0.916164242426409	0.0322958318456572	FALSE
+"PchR"	"Biosynthetic Gene Cluster"	"Pyochelin synthesis"	1	20.1651261438609	3.23774105324523e-11	TRUE
+"PvdS"	"Biosynthetic Gene Cluster"	"Pyoverdine synthesis"	1	19.2505637346549	1.15267293120242e-09	TRUE
+"NRPS"	"Biosynthetic Gene Cluster"	"Nonribosomal peptide synthetase"	2	12.8611419385914	4.2231053067064e-09	TRUE
+"QscR-2"	"Biosynthetic Gene Cluster"	"Phenazine/Pyocyanin biosynthesis"	2	7.21831342858087	2.40306326109998e-07	TRUE
+"k-opioid"	"Biosynthetic Gene Cluster"	"Nonribosomal peptide synthetase (Pyoveridine)"	1	6.22974515258747	2.52767336755491e-09	TRUE
+"RiPP"	"Biosynthetic Gene Cluster"	"RiPP like gene cluster (Hypochlorite sensing)"	0	1.03142366745361	0.0144388866043529	FALSE
+"HexR-1"	"Carbon Source Utilization"	"Glucose metabolism"	1	5.31045882168165	2.54830056884234e-07	TRUE
+"RsmA"	"Carbon Source Utilization"	"2-ketogluconate metabolism"	0	1.98134508822463	6.48469888311187e-06	FALSE
+"PtxS"	"Carbon Source Utilization"	"2-ketogluconate metabolism"	0	1.77412146292648	0.0160625701108785	FALSE
+"AtuR"	"Carbon Source Utilization"	"Geraniol degradation"	0	1.44229858329975	0.000293875744390543	FALSE
+"AcoR"	"Carbon Source Utilization"	"2,3-butanediol and acetoin catabolism"	0	1.37910585292949	0.00460663978239885	FALSE
+"NagQ"	"Carbon Source Utilization"	"N-acetylglucosamine catabolism"	0	1.30538586027838	0.00107148529684963	FALSE
+"HexR-2"	"Carbon Source Utilization"	"Glucose metabolism"	0	1.2546400649801	0.00492131552757547	FALSE
+"FruR"	"Carbon Source Utilization"	"Fructose and mannose metabolism/Pentose phosphate pathway"	0	1.14473556204247	0.0020110059130481	FALSE
+"LaoR"	"Carbon Source Utilization"	"Oxidation of Long-Chain Alcohols"	0	1.05647880465238	0.082177325066552	FALSE
+"RpoN"	"Carbon Source Utilization"	"Starch and sucrose metabolism"	0	1.0199253672535	0.0265285825182054	FALSE
+"GlpR"	"Carbon Source Utilization"	"Glycerol-3-phosphate metabolism"	0	0.783773876086433	0.268031038247735	FALSE
+"RoxR"	"Energy Metabolism"	"Cytochrome oxidases"	0	3.23957501174656	6.03752640234785e-05	FALSE
+"RpoH"	"Heat Shock Response"	"Heat Shock Response"	0	3.9099365081436	1.42720073694979e-05	FALSE
+"Iron acquisition"	"Metal Homeostasis"	"Iron acquisition"	1	15.5670465411402	1.09561265600513e-09	TRUE
+"Anr-1"	"Metal Homeostasis"	"Molybdenum cofactor biosynthesis"	2	9.33352440283891	3.35555649204098e-05	TRUE
+"FpvR"	"Metal Homeostasis"	"Ferripyoveridine system"	1	8.80528531454729	3.63890029191812e-09	TRUE
+"LasR"	"Metal Homeostasis"	"Pyochelin biosynthesis and Secretion (I) system"	2	6.37349333595023	2.49931966681178e-07	TRUE
+"FoxR"	"Metal Homeostasis"	"Iron chelator"	1	5.9791865658098	8.01216121453223e-06	TRUE
+"CysB-2"	"Metal Homeostasis"	"ABC transporter (Sulphur metabolism)"	0	4.19778008639189	0.183293456277735	FALSE
+"PhnR-2"	"Metal Homeostasis"	"Phosphate transport"	0	2.19130206854099	8.2965520617058e-05	FALSE
+"CysB-3"	"Metal Homeostasis"	"ABC transporter (Sulphur metabolism)"	0	1.65326638678513	0.291944922001108	FALSE
+"Fur"	"Metal Homeostasis"	"Uncharaterized"	0	1.61895884496458	0.0209204173961276	FALSE
+"CueR"	"Metal Homeostasis"	"Copper adaptation/transport"	0	1.50520305624144	0.000308173449551612	FALSE
+"Zur-1"	"Metal Homeostasis"	"Zinc uptake"	0	1.29424722053769	0.00265218515256534	FALSE
+"Zur-2"	"Metal Homeostasis"	"Zinc uptake"	0	1.07939761622176	0.00372143475820099	FALSE
+"CysB-1"	"Metal Homeostasis"	"Sulfonate utilization operons"	0	0.73158275655788	0.551711571722747	FALSE
+"AtsR"	"Metal Homeostasis"	"ABC transporter (Sulphur metabolism)"	0	0.566873382838943	0.590481067238551	FALSE
+"BexR"	"Miscellaneous Metabolism"	"Virulence factor AprA"	0	2.47763646848995	0.000114091826110377	FALSE
+"MvfR"	"Miscellaneous Metabolism"	"PQS signalling"	0	2.09151532475645	0.00146749623339472	FALSE
+"ErbR-2"	"Miscellaneous Metabolism"	"PQQ biosynthesis"	0	1.83222276799124	1.40795366816398e-06	FALSE
+"AntR"	"Miscellaneous Metabolism"	"Degradation of anthranilate to tricarboxylic acid cycle intermediates"	0	1.17203135696943	0.00198416363914905	FALSE
+"MdcR"	"Miscellaneous Metabolism"	"Malonate synthesis"	0	0.693437706204828	0.0791904204918621	FALSE
+"Sigma-70"	"Prophages"	"Prophages (YMC11/02/R656)"	0	4.3708293015103	0.000140068399265013	FALSE
+"XisF4-2"	"Prophages"	"Excision of Pf4 prophage"	0	1.89517952206809	5.2619344790666e-05	FALSE
+"XisF4-1"	"Prophages"	"Excision of Pf4 prophage"	0	1.74645344591332	0.00378271524002168	FALSE
+"Quorum sensing"	"Quorum Sensing"	"Quorum sensing"	2	8.5640288072126	4.31344303712061e-10	TRUE
+"QscR-1"	"Quorum Sensing"	"PA1891-PA1897 novel operon"	0	3.26952422386167	5.56823085147138e-06	FALSE
+"AHL"	"Quorum Sensing"	"AHL synthesis"	0	2.0199818583554	0.0909037747654164	FALSE
+"TagR1"	"Secretion System"	"H1-Type VI secretion system"	1	7.35926141294053	1.5415107157283e-07	TRUE
+"Sfa2"	"Secretion System"	"H2-T6SS/Secretion system (VI)"	0	2.02213648575501	0.00288471326127446	FALSE
+"ExsB"	"Secretion System"	"T3SS system"	0	1.55092670176534	0.00215516340051962	FALSE
+"Singlet-3"	"Singlet"	NA	0	2.14004793185221	0.00098639482371394	FALSE
+"Singlet-1"	"Singlet"	NA	0	1.45936443531811	9.70123659817756e-05	FALSE
+"Singlet-11"	"Singlet"	NA	0	1.17453497610273	0.0210442819351221	FALSE
+"Singlet-10"	"Singlet"	NA	0	1.09615876671202	0.0511158127401335	FALSE
+"Singlet-2"	"Singlet"	NA	0	1.0477401974956	0.00657920121891877	FALSE
+"Singlet-7"	"Singlet"	NA	0	0.850199222489634	0.0463858435144194	FALSE
+"Singlet-6"	"Singlet"	NA	0	0.839967168806963	0.0282666525973541	FALSE
+"Singlet-12"	"Singlet"	NA	0	0.579634155215625	0.0657621755938447	FALSE
+"Singlet-5"	"Singlet"	NA	0	0.56322208742652	0.0252074062840601	FALSE
+"Singlet-9"	"Singlet"	NA	0	0.473581719662814	0.105022084739487	FALSE
+"Singlet-4"	"Singlet"	NA	0	0.430266255098721	0.121046600924396	FALSE
+"Singlet-8"	"Singlet"	NA	0	0.274755159840087	0.417053955093954	FALSE
+"RpoS-2"	"Stress Response"	"General stress response"	2	14.0371460956664	4.58243895316344e-06	TRUE
+"RpoS-1"	"Stress Response"	"General stress response"	0	4.11887704967449	0.00384765592127155	FALSE
+"LexA"	"Stress Response"	"SOS response for DNA protection and repair"	0	1.1243828554247	0.00215516340051962	FALSE
+"AmrZ"	"Structural Components"	"Exopolysaccharide biosynthesis"	0	3.14396634763508	0.000166835704342074	FALSE
+"PA1226"	"Structural Components"	"Lipopolysaccharide synthesis"	0	2.86577197661441	0.0612297693548982	FALSE
+"PprB"	"Structural Components"	"Flp pilus assembly protein"	0	2.8386406306992	7.14261498084241e-05	FALSE
+"Cell Division"	"Structural Components"	"Cell wall biosynthesis"	0	2.44137217680114	0.0120692747941581	FALSE
+"FleN-2"	"Structural Components"	"Bacterial chemotaxis"	0	2.32054595146469	3.70201899712127e-06	FALSE
+"FleN-1"	"Structural Components"	"Bacterial chemotaxis"	0	1.78273126710195	0.000653305014415804	FALSE
+"Translational-1"	"Translational"	NA	2	12.9690656590032	7.33173752501512e-08	TRUE
+"Translational-3"	"Translational"	NA	0	2.88615549686672	0.0178468381105983	FALSE
+"Uncharacterized-8"	"Translational"	NA	0	2.18664266804561	1.54938185588403e-05	FALSE
+"Translational-2"	"Translational"	NA	0	0.907892919573567	0.00607475181378512	FALSE
+"Uncharacterized-9"	"Uncharacterized"	NA	4	14.3831313444564	0.000765906349964027	TRUE
+"Uncharacterized-11"	"Uncharacterized"	NA	0	4.61797240346866	2.49931966681178e-07	FALSE
+"Uncharacterized-14"	"Uncharacterized"	NA	0	3.01303241743215	0.00607475181378512	FALSE
+"Uncharacterized-10"	"Uncharacterized"	NA	0	2.60908861878396	0.00312726165015831	FALSE
+"Uncharacterized-1"	"Uncharacterized"	NA	0	2.52712047234386	0.000343601197427117	FALSE
+"Uncharacterized-3"	"Uncharacterized"	NA	0	2.49168330844226	4.58243895316344e-06	FALSE
+"Uncharacterized-4"	"Uncharacterized"	NA	0	1.7728118575814	0.00121311198835561	FALSE
+"Uncharacterized-7"	"Uncharacterized"	NA	0	1.70330105916129	0.00607475181378512	FALSE
+"Uncharacterized-13"	"Uncharacterized"	NA	0	1.66392161597477	0.000379710164285702	FALSE
+"Uncharacterized-5"	"Uncharacterized"	NA	0	1.65170873506481	0.0040943577184875	FALSE
+"Uncharacterized-12"	"Uncharacterized"	NA	0	1.48365307266688	0.0034562262117462	FALSE
+"Uncharacterized-6"	"Uncharacterized"	NA	0	0.676041658927614	0.0245648464713736	FALSE
+"Uncharacterized-2"	"Uncharacterized"	NA	0	0.5500799448853	0.0660517160489314	FALSE

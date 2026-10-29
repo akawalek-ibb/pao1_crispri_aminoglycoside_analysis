@@ -1,0 +1,2 @@
+**Due to space constraints, figure PDFs are provided as reference outputs. Underlying numerical figure data and
+intermediate analysis outputs that are not included must be regenerated using the supplied scripts.**

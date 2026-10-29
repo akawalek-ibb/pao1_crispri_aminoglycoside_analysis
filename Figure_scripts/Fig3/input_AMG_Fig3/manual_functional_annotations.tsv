@@ -1,0 +1,239 @@
+PAO1_ID	gene_name	annotation_category
+PA0002	dnaN	DNA replication, repair, chromosome segregation
+PA0005	lptA	Fatty acid & phospholipid metabolism
+PA0024	hemF	Other metabolism
+PA0028	PA0028	Other / unclassified
+PA0126	PA0126	Other / unclassified
+PA0240	PA0240	Transport / efflux
+PA0304	spuH	Transport / efflux
+PA0305	hacB	Regulation / stress response
+PA0336	rppH	Translation & RNA metabolism
+PA0352	PA0352	Transport / efflux
+PA0426	mexB	Transport / efflux
+PA0427	oprM	Transport / efflux
+PA0440	PA0440	Other metabolism
+PA0548	tktA	Energy metabolism
+PA0555	fda	Energy metabolism
+PA0592	ksgA	Translation & RNA metabolism
+PA0742	PA0742	Other / unclassified
+PA0780	pruR	Regulation / stress response
+PA0945	purM	Other metabolism
+PA0969	tolQ	Cell division / envelope maintenance
+PA0971	tolA	Cell division / envelope maintenance
+PA0973	oprL	Cell division / envelope maintenance
+PA1118	PA1118	Other / unclassified
+PA1148	toxA	Other / unclassified
+PA1164	PA1164	Translation & RNA metabolism
+PA1418	PA1418	Transport / efflux
+PA1435	PA1435	Transport / efflux
+PA1445	fliO	Other / unclassified
+PA1475	ccmA	Energy metabolism
+PA1476	ccmB	Energy metabolism
+PA1477	ccmC	Energy metabolism
+PA1478	PA1478	Energy metabolism
+PA1479	ccmE	Energy metabolism
+PA1480	ccmF	Energy metabolism
+PA1481	ccmG	Energy metabolism
+PA1482	ccmH	Energy metabolism
+PA1483	cycH	Energy metabolism
+PA1528	zipA	Cell division / envelope maintenance
+PA1549	copA2	Energy metabolism
+PA1550	PA1550	Other / unclassified
+PA1551	PA1551	Energy metabolism
+PA1552	ccoP1	Energy metabolism
+PA1552.1	ccoQ1	Energy metabolism
+PA1553	ccoO1	Energy metabolism
+PA1554	ccoN1	Energy metabolism
+PA1555.1	ccoQ2	Energy metabolism
+PA1580	gltA	Energy metabolism
+PA1588	sucC	Energy metabolism
+PA1589	sucD	Energy metabolism
+PA1609	fabB	Fatty acid & phospholipid metabolism
+PA1740	PA1740	Other metabolism
+PA1771	estX	Other metabolism
+PA1774	crfX	Regulation / stress response
+PA1775	cmpX	Transport / efflux
+PA1776	sigX	Regulation / stress response
+PA1804	hupB	DNA replication, repair, chromosome segregation
+PA1952	fapE	Other / unclassified
+PA2018	mexY	Transport / efflux
+PA2019	mexX	Transport / efflux
+PA2066	PA2066	Transport / efflux
+PA2172	PA2172	Protein export / quality control
+PA2311	PA2311	Other / unclassified
+PA2542	PA2542	Protein export / quality control
+PA2600	PA2600	Other metabolism
+PA2637	nuoA	Energy metabolism
+PA2638	nuoB	Energy metabolism
+PA2639	nuoD	Energy metabolism
+PA2640	nuoE	Energy metabolism
+PA2641	nuoF	Energy metabolism
+PA2642	nuoG	Energy metabolism
+PA2643	nuoH	Energy metabolism
+PA2644	nuoI	Energy metabolism
+PA2645	nuoJ	Energy metabolism
+PA2646	nuoK	Energy metabolism
+PA2648	nuoM	Energy metabolism
+PA2649	nuoN	Energy metabolism
+PA2710	PA2710	Transport / efflux
+PA2746	PA2746	Other / unclassified
+PA2797	PA2797	Regulation / stress response
+PA2798	PA2798	Regulation / stress response
+PA2880	PA2880	Transport / efflux
+PA2915	PA2915	Other metabolism
+PA2939	PA2939	Protein export / quality control
+PA2962	tmk	Other metabolism
+PA2970	rpmF	Translation & RNA metabolism
+PA2971	PA2971	Translation & RNA metabolism
+PA2976	rne	Translation & RNA metabolism
+PA2981	lpxK	Lipopolysaccharide
+PA2982	PA2982	Transport / efflux
+PA2983	PA2983	Transport / efflux
+PA3108	purF	Other metabolism
+PA3112	accD	Fatty acid & phospholipid metabolism
+PA3168	gyrA	DNA replication, repair, chromosome segregation
+PA3171	ubiG	Energy metabolism
+PA3210	trkH	Transport / efflux
+PA3244	minD	Cell division / envelope maintenance
+PA3286	PA3286	Fatty acid & phospholipid metabolism
+PA3309	PA3309	Regulation / stress response
+PA3574	nalD	Regulation / stress response
+PA3584	glpD	Fatty acid & phospholipid metabolism
+PA3634	PA3634	Cell division / envelope maintenance
+PA3635	eno	Energy metabolism
+PA3639	accA	Fatty acid & phospholipid metabolism
+PA3644	lpxA	Lipopolysaccharide
+PA3646	lpxD	Lipopolysaccharide
+PA3650	dxr	Other metabolism
+PA3675	PA3675	Other / unclassified
+PA3686	adk	Other metabolism
+PA3742	rplS	Translation & RNA metabolism
+PA3759	PA3759	Other metabolism
+PA3763	purL	Other metabolism
+PA3768	PA3768	Other / unclassified
+PA3769	guaA	Other metabolism
+PA3778	PA3778	Regulation / stress response
+PA3799	PA3799	Translation & RNA metabolism
+PA3801	PA3801	Regulation / stress response
+PA3811	hscB	Other metabolism
+PA3812	iscA	Other metabolism
+PA3820	secF	Protein export / quality control
+PA3821	secD	Protein export / quality control
+PA3822	PA3822	Protein export / quality control
+PA3880	PA3880	Other / unclassified
+PA3969	PA3969	Other metabolism
+PA3977	hemL	Other metabolism
+PA4020	mpl	Cell division / envelope maintenance
+PA4042	xseB	DNA replication, repair, chromosome segregation
+PA4043	ispA	Other metabolism
+PA4044	dxs	Other metabolism
+PA4047	ribA	Other metabolism
+PA4119	aph	Other / unclassified
+PA4242	rpmJ	Translation & RNA metabolism
+PA4244	rplO	Translation & RNA metabolism
+PA4247	rplR	Translation & RNA metabolism
+PA4248	rplF	Translation & RNA metabolism
+PA4266	fusA1	Translation & RNA metabolism
+PA4273	rplA	Translation & RNA metabolism
+PA4279	PA4279	Other metabolism
+PA4311	PA4311	Cell division / envelope maintenance
+PA4403	secA	Protein export / quality control
+PA4406	lpxC	Lipopolysaccharide
+PA4407	ftsZ	Cell division / envelope maintenance
+PA4408	ftsA	Cell division / envelope maintenance
+PA4409	ftsQ	Cell division / envelope maintenance
+PA4410	ddlB	Cell division / envelope maintenance
+PA4411	murC	Cell division / envelope maintenance
+PA4412	murG	Cell division / envelope maintenance
+PA4413	ftsW	Cell division / envelope maintenance
+PA4414	murD	Cell division / envelope maintenance
+PA4415	mraY	Cell division / envelope maintenance
+PA4416	murF	Cell division / envelope maintenance
+PA4417	murE	Cell division / envelope maintenance
+PA4418	ftsI	Cell division / envelope maintenance
+PA4420	PA4420	Translation & RNA metabolism
+PA4421	PA4421	Regulation / stress response
+PA4425	PA4425	Lipopolysaccharide
+PA4429	PA4429	Energy metabolism
+PA4430	PA4430	Energy metabolism
+PA4431	PA4431	Energy metabolism
+PA4432	rpsI	Translation & RNA metabolism
+PA4450	murA	Cell division / envelope maintenance
+PA4460	lptH	Lipopolysaccharide
+PA4463	PA4463	Translation & RNA metabolism
+PA4464	ptsN	Regulation / stress response
+PA4559	lspA	Protein export / quality control
+PA4566	obg	Translation & RNA metabolism
+PA4567	rpmA	Translation & RNA metabolism
+PA4568	rplU	Translation & RNA metabolism
+PA4569	ispB	Energy metabolism
+PA4570	PA4570	Other / unclassified
+PA4622	PA4622	Transport / efflux
+PA4665	prfA	Translation & RNA metabolism
+PA4666	hemA	Other metabolism
+PA4667	lbcA	Protein export / quality control
+PA4671	PA4671	Translation & RNA metabolism
+PA4693	pssA	Fatty acid & phospholipid metabolism
+PA4729	panB	Other metabolism
+PA4744	infB	Translation & RNA metabolism
+PA4747	secG	Protein export / quality control
+PA4748	tpiA	Energy metabolism
+PA4751	ftsH	Protein export / quality control
+PA4782	PA4782	Other / unclassified
+PA4783	PA4783	Transport / efflux
+PA4853	fis	DNA replication, repair, chromosome segregation
+PA4855	purD	Other metabolism
+PA4922	azu	Energy metabolism
+PA4931	dnaB	DNA replication, repair, chromosome segregation
+PA4938	purA	Other metabolism
+PA4939	PA4939	Other metabolism
+PA4940	PA4940	Other / unclassified
+PA4941	hflC	Protein export / quality control
+PA4942	hflK	Protein export / quality control
+PA4944	hfq	Translation & RNA metabolism
+PA4947	amiB	Cell division / envelope maintenance
+PA4961	PA4961	Other / unclassified
+PA4965	PA4965	Protein export / quality control
+PA5012	waaF	Lipopolysaccharide
+PA5034	hemE	Other metabolism
+PA5052	PA5052	Cell division / envelope maintenance
+PA5053	hslV	Protein export / quality control
+PA5054	hslU	Protein export / quality control
+PA5056	phaC1	Other metabolism
+PA5063	ubiE	Energy metabolism
+PA5064	PA5064	Energy metabolism
+PA5065	ubiB	Energy metabolism
+PA5066	hisI	Other metabolism
+PA5067	hisE	Other metabolism
+PA5068	tatA	Protein export / quality control
+PA5069	tatB	Protein export / quality control
+PA5070	tatC	Protein export / quality control
+PA5103	puuR	Transport / efflux
+PA5110	fbp	Energy metabolism
+PA5154	PA5154	Transport / efflux
+PA5200	amgR	Regulation / stress response
+PA5225	PA5225	Other / unclassified
+PA5237	PA5237	Energy metabolism
+PA5260	hemC	Other metabolism
+PA5289	PA5289	Energy metabolism
+PA5300	cycB	Energy metabolism
+PA5386	cdhA	Other metabolism
+PA5399	dgcB	Other metabolism
+PA5471	armZ	Regulation / stress response
+PA5471.1	PA5471.1	Regulation / stress response
+PA5490	cc4	Energy metabolism
+PA5491	PA5491	Energy metabolism
+PA5492	PA5492	Translation & RNA metabolism
+PA5494	PA5494	Other / unclassified
+PA5553	atpC	Energy metabolism
+PA5554	atpD	Energy metabolism
+PA5555	atpG	Energy metabolism
+PA5556	atpA	Energy metabolism
+PA5557	atpH	Energy metabolism
+PA5558	atpF	Energy metabolism
+PA5559	atpE	Energy metabolism
+PA5560	atpB	Energy metabolism
+PA5561	atpI	Energy metabolism
+PA5563	soj	DNA replication, repair, chromosome segregation
+PA5568	PA5568	Protein export / quality control
+PA5569	rnpA	Translation & RNA metabolism

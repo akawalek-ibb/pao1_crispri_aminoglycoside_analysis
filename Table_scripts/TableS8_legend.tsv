@@ -1,0 +1,189 @@
+field	description
+Supplementary Table S8	CRISPRi gene–aminoglycoside interactions.
+Worksheets	Content
+counts_thresholds	Numbers of genes tested and called sensitizing or protective, method agreement and analysis thresholds.
+Stouffer_calls	Genes with significant interactions based on Stouffer method, including effect sizes, p-values and recurrence across conditions.
+MAGeCK_calls	MAGeCK results for antibiotic vs untreated comparisons, covering only genes identified by either method.
+MAGeCK_vs_Stouffer	Agreement between methods and recurrence of each gene’s interactions across conditions.
+Mismatch_based_evidence	Candidate sensitizing or protective interactions supported by mismatch-guide profiles.
+Gene_level_hits_by_TU	Recurrent sensitizing and protective genes grouped by transcriptional unit (TU).
+TU_level_interactions	TU-level effects and interaction calls calculated from pooled guides.
+KEGG_enrichment	KEGG pathway enrichment results for recurrent sensitizing and protective hits, analysed at gene and TU levels.
+Murray_comparison	Comparison of recurrent hits with published aminoglycoside-response data from Murray et al. (2015).
+Methods and remarks	
+Stouffer calls	Raw p < {{p_stouffer}} and median guide log₂FC ≤ min(−{{lfc_floor}}, comparison median − {{mad_multiplier}} unscaled MAD) for sensitizing calls, or ≥ max(+{{lfc_floor}}, median + {{mad_multiplier}} MAD) for protective calls. Per-comparison cutoffs are in counts_thresholds.
+T1 recurrence	Same-direction calls in ≥{{recurrence_min}} of the {{n_T1}} T1 contrasts: {{recurrence_conditions}}. TOB 0.4 T2 is excluded from recurrence.
+MAGeCK	Directional MAGeCK RRA FDR < {{mageck_fdr}}, without an LFC cutoff. Both directions significant is Ambiguous. These analyses use the same screen counts.
+Recurrent gene sets	{{n_sensitizing}} sensitizing and {{n_protective}} protective genes, defined by Stouffer recurrence. MAGeCK comparison does not redefine these primary sets.
+TU analyses	Recurrent gene hits collapse to {{n_TU_sensitizing}} sensitizing and {{n_TU_protective}} protective TUs. Separate pooled-guide TU testing combines eligible full-match guides by TU and applies the raw-p/adaptive-MAD rule to TU effects.
+KEGG query sizes	Gene query sizes: {{gene_query_sensitizing}} sensitizing and {{gene_query_protective}} protective genes. TU query sizes: {{TU_query_sensitizing}} and {{TU_query_protective}}. Background: {{gene_universe}} evaluable genes mapped to {{TU_universe}} TUs.
+KEGG test	One-sided Fisher overrepresentation test (alternative = greater), with BH adjustment separately for each direction and gene/TU level across {{n_KEGG_terms}} terms retained at both levels.
+KEGG TU membership	A TU inherits terms from its member genes and is counted once per term. Queries are TUs containing recurrent gene-level hits. This differs from pooled-guide TU testing.
+KEGG statistics	Coverage = 100 × overlap / term-background size. Fold enrichment = overlap / (query size × term-background size / universe size). The odds ratio is the Fisher-test estimate.
+Mismatch support	Exploratory candidates required ≥{{min_guides}} guides, ≥{{min_bins}} bins with ≥{{min_bin_guides}} guides each, and a threshold crossing by predicted relative efficacy {{partial_max}}. LOESS fits used ≥{{loess_min_bins}} qualified bins and required excursion AUC ≥{{loess_auc}} and total excursion width ≥{{loess_width}} over efficacy {{loess_min_x}}–{{loess_max_x}}. Conventional same-direction calls and genes recurrent in either direction were excluded. Candidate interactions require individual validation.
+Murray comparison	GEN = gentamicin; NEO = neomycin; TOB = tobramycin. Murray calls require FDR < {{murray_fdr}} and |logFC| ≥{{murray_lfc}}. Concordant support is the same direction in ≥1 Murray condition; min2 requires ≥2.
+BH support analysis	BH adjustment was applied within each complete gene-level comparison, before selecting hits. Requiring adjusted p < {{bh_cut}} in addition to the original rules retained {{BH_sensitizing}}/{{n_sensitizing}} sensitizing and {{BH_protective}}/{{n_protective}} protective recurrent genes.
+Column definitions: counts_thresholds	
+comparison_id	Experimental contrast.
+display_label	Label for the experimental comparison.
+n_stouffer_evaluated	Total genes evaluated by Stouffer in this comparison.
+n_stouffer_sensitizing	Number of sensitizing genes called by Stouffer in this comparison.
+n_stouffer_protective	Number of protective genes called by Stouffer in this comparison.
+n_mageck_evaluated	Total genes evaluated by MAGeCK in this comparison.
+n_mageck_sensitizing	Number of sensitizing genes called by MAGeCK in this comparison.
+n_mageck_protective	Number of protective genes called by MAGeCK in this comparison.
+n_shared_sensitizing	Number of sensitizing genes called in the same direction by both methods in this comparison.
+n_shared_protective	Number of protective genes called in the same direction by both methods in this comparison.
+n_stouffer_only_sensitizing	Number of sensitizing genes called by Stouffer without a same-direction MAGeCK call in this comparison.
+n_stouffer_only_protective	Number of protective genes called by Stouffer without a same-direction MAGeCK call in this comparison.
+n_mageck_only_sensitizing	Number of sensitizing genes called by MAGeCK without a same-direction Stouffer call in this comparison.
+n_mageck_only_protective	Number of protective genes called by MAGeCK without a same-direction Stouffer call in this comparison.
+n_union_called	Number of genes called in either direction by either method, counted once within this comparison.
+p_stouffer_cutoff	gene-level Stouffer significance cutoff used.
+median_medLFC	Comparison-wide median gene effect used to center the adaptive MAD cutoffs.
+MAD	Median absolute deviation of the comparison-wide gene effects.
+sensitizing_cutoff_source	How the lower Stouffer cutoff was selected. Applied lower and upper cutoffs are reported in the following columns.
+sensitizing_LFC_cutoff_used	Final lower effect cutoff: min(−1, comparison median−5 MAD).
+protective_LFC_cutoff_used	Final upper effect cutoff: max(+1, comparison median+5 MAD).
+Column definitions: Stouffer_calls	
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+product_name	Reported gene-product annotation.
+essential_category_code	Collapsed essentiality annotation code used to group current screen results (See Supplementary Table S2).
+TU	Reported transcription-unit membership.
+n_independent_T1_sensitizing	Number of five T1 AG contrasts with significant sensitizing Stouffer calls. 
+n_independent_T1_protective	Number of five T1 AG contrasts with significant protective Stouffer calls.
+recurrent_sensitizing	TRUE if sensitizing calls recur in ≥2 of the five T1 AG contrasts at this analysis level.
+recurrent_protective	TRUE if protective calls recur in ≥2 of the five T1 AG contrasts at this analysis level.
+TOB_0.025_medLFC	TOB_0.025: Median control-adjusted full-match-guide log₂ fold change.
+TOB_0.1_medLFC	TOB_0.1: Median control-adjusted full-match-guide log₂ fold change.
+TOB_0.4_medLFC	TOB_0.4: Median control-adjusted full-match-guide log₂ fold change.
+TOB_1_medLFC	TOB_1: Median control-adjusted full-match-guide log₂ fold change.
+TOB_T2_medLFC	TOB_0.4_T2: Median control-adjusted full-match-guide log₂ fold change. 
+AMK_medLFC	AMK: Median control-adjusted full-match-guide log₂ fold change.
+TOB_0.025_p_stouffer	TOB_0.025: Raw gene Stouffer p-value; no gene-level BH adjustment.
+TOB_0.1_p_stouffer	TOB_0.1: Raw gene Stouffer p-value; no gene-level BH adjustment.
+TOB_0.4_p_stouffer	TOB_0.4: Raw gene Stouffer p-value; no gene-level BH adjustment.
+TOB_1_p_stouffer	TOB_1: Raw gene Stouffer p-value; no gene-level BH adjustment.
+TOB_T2_p_stouffer	TOB_0.4_T2: Raw gene Stouffer p-value; no gene-level BH adjustment.
+AMK_p_stouffer	AMK: Raw gene Stouffer p-value; no gene-level BH adjustment.
+TOB_0.025_call	TOB_0.025: Final Stouffer directional call.
+TOB_0.1_call	TOB_0.1: Final Stouffer directional call.
+TOB_0.4_call	TOB_0.4: Final Stouffer directional call.
+TOB_1_call	TOB_1: Final Stouffer directional call.
+TOB_T2_call	TOB_T2: Final Stouffer directional call.
+AMK_call	AMK: Final Stouffer directional call.
+TOB_0.025_p_stouffer_BH	Benjamini–Hochberg-adjusted gene-level Stouffer p-value 
+TOB_0.1_p_stouffer_BH	Benjamini–Hochberg-adjusted gene-level Stouffer p-value 
+TOB_0.4_p_stouffer_BH	Benjamini–Hochberg-adjusted gene-level Stouffer p-value
+TOB_1_p_stouffer_BH	Benjamini–Hochberg-adjusted gene-level Stouffer p-value
+AMK_p_stouffer_BH	Benjamini–Hochberg-adjusted gene-level Stouffer p-value
+Column definitions: MAGeCK_calls	
+comparison_id	Identifier for the exact experimental contrast.
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+mageck_gene_lfc	MAGeCK gene-level log₂ fold change for the indicated contrast.
+mageck_neg_fdr	MAGeCK negative-selection RRA false-discovery rate.
+mageck_pos_fdr	MAGeCK positive-selection RRA false-discovery rate.
+mageck_call	MAGeCK directional classification for this contrast.
+medLFC_stouffer	Median control-adjusted log₂ fold change of eligible full-match guides for the gene and contrast.
+p_stouffer	Gene-level Stouffer-combined p-value from full-match guides; no gene-level BH/FDR substitution.
+stouffer_call	Final gene-level Stouffer directional classification for this contrast.
+stouffer_evaluated	TRUE if the gene was evaluated by the source Stouffer analysis; FALSE/missing is not a nonsignificant test.
+mageck_evaluated	TRUE if the gene was evaluated by MAGeCK for this contrast.
+method_comparison	Source classification of same-direction agreement, one-method-only calls, no call or directional conflict.
+shared_same_direction	TRUE when both methods call the same direction in this specific comparison.
+any_call	TRUE if either method makes a directional call in this comparison.
+Column definitions: MAGeCK_vs_Stouffer	Fields retained in this worksheet
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+n_stouffer_T1_sensitizing	Number of five T1 AG contrasts with sensitizing Stouffer calls.
+n_stouffer_T1_protective	Number of five T1 AG contrasts with protective Stouffer calls.
+n_mageck_T1_sensitizing	Number of five T1 AG contrasts with sensitizing MAGeCK calls.
+n_mageck_T1_protective	Number of five T1 AG contrasts with protective MAGeCK calls.
+n_shared_T1_sensitizing	Number of five T1 AG contrasts with sensitizing same-direction calls by both methods.
+n_shared_T1_protective	Number of five T1 AG contrasts with protective same-direction calls by both methods.
+stouffer_recurrent_T1_sensitizing	TRUE if Stouffer calls occur in the sensitizing direction in ≥2 of five T1 AG contrasts.
+stouffer_recurrent_T1_protective	TRUE if Stouffer calls occur in the protective direction in ≥2 of five T1 AG contrasts.
+mageck_recurrent_T1_sensitizing	TRUE if MAGeCK calls occur in the sensitizing direction in ≥2 of five T1 AG contrasts.
+mageck_recurrent_T1_protective	TRUE if MAGeCK calls occur in the protective direction in ≥2 of five T1 AG contrasts.
+shared_recurrent_T1_sensitizing	TRUE if same-direction calls shared by both methods occur in the sensitizing direction in ≥2 of five T1 AG contrasts.
+shared_recurrent_T1_protective	TRUE if same-direction calls shared by both methods occur in the protective direction in ≥2 of five T1 AG contrasts.
+Column definitions: Mismatch_based_evidence	
+comparison_id	Identifier for the exact experimental contrast.
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+product_name	Reported gene-product annotation.
+direction	Direction of the candidate interaction (sensitizing or protective).
+interaction_medLFC	Gene-level median full-match-guide log₂ fold change for the contrast.
+conventional_gene_level_p_stouffer	Stouffer p-value.
+interaction_threshold (sensitivity)	Predicted efficacy at the sustained source directional interaction threshold.
+partial_bin_extreme	Source diagnostic for the extreme response at partial guide efficacy.
+EC50	Fitted guide efficacy at half-maximal response in the mismatch analysis.
+Emax	Source maximal fitted effect parameter for the mismatch-guide response.
+Column definitions: Gene_level_hits_by_TU	Fields retained in this worksheet
+TU_ID	Transcription-unit identifier.
+n_all_genes_in_TU	Number of all annotated genes in the TU.
+n_recurrent_genes	Number of final recurrent gene-level hits assigned to the TU, counted once.
+recurrent_gene_PAO1_IDs	PAO1 locus identifiers of final recurrent gene-level hits in this TU.
+recurrent_gene_names	Reported names of final recurrent gene-level hits in this TU.
+n_recurrent_sensitizing_genes	Number of recurrent sensitizing gene-level hits assigned to this TU.
+recurrent_sensitizing_gene_PAO1_IDs	PAO1 locus identifiers of recurrent sensitizing gene-level hits assigned to this TU.
+recurrent_sensitizing_gene_names	Reported names of recurrent sensitizing gene-level hits assigned to this TU.
+n_recurrent_protective_genes	Number of recurrent protective gene-level hits assigned to this TU.
+recurrent_protective_gene_PAO1_IDs	PAO1 locus identifiers of recurrent protective gene-level hits assigned to this TU.
+recurrent_protective_gene_names	Reported names of recurrent protective gene-level hits assigned to this TU.
+TU_contains_recurrent_sensitizing	TRUE if the TU contains at least one recurrent sensitizing gene-level hit.
+TU_contains_recurrent_protective	TRUE if the TU contains at least one recurrent protective gene-level hit.
+TU_recurrent_direction	Combined direction label of recurrent member gene-level hits.
+protective_conditions_union	Union of T1 protective contrast labels across the recurrent member genes.
+sensitizing_conditions_union	Union of T1 sensitizing contrast labels across the recurrent member genes.
+Column definitions: TU_level_interactions	
+TU_ID	Transcription-unit identifier used in the indicated TU analysis.
+batch	Experimental batch identifier (B1–B4).
+condition	Experimental contrast
+tu_medLFC	Median  full-match-guide log₂ fold change across eligible full-match guides pooled within the TU.
+tu_p_stouffer	Raw Stouffer p-value across eligible full-match guides pooled within the TU. 
+n_perfect_guides	Number of full-match guide observations supporting the indicated result.
+n_targeted_genes	Number of genes targeted by  full-match guides in this TU comparison.
+targeted_PAO1_IDs	PAO1 genes represented by eligible full-match guides in this TU.
+assigned_effect_TU	TU classification as sensitizing, protective or not significant, based on raw Stouffer p <0.01 and contrast-specific 5-MAD cutoffs, with a minimum absolute log₂ fold change of 1.
+Column definitions: KEGG_enrichment	Fields retained in this worksheet
+term	Functional KEGG term.
+direction	Direction of the interaction of query set (sensitizing or protective).
+gene_overlap_n	Gene-level number of query members in the term.
+gene_total_term_n	Gene-level number of universe members assigned to this term.
+gene_coverage_pct	gene-level percentage of the term covered by the query.
+gene_fold_enrichment	Observed overlap divided by expected overlap (universe sizes are given above).
+gene_odds_ratio	Gene-level Fisher-test odds-ratio estimate.
+gene_p_value	Gene-level one-sided Fisher overrepresentation p-value.
+gene_FDR_BH	Benjamini–Hochberg-adjusted KEGG overrepresentation p-value. 
+gene_overlap_members	PAO1 locus identifiers of recurrent query genes assigned to this KEGG term.
+TU_overlap_n	Gene-collapsed TU-level number of query members in the term.
+TU_total_term_n	Gene-collapsed TU-level number of universe members assigned to this term.
+TU_coverage_pct	TU-level percentage of the term covered by the query. 
+TU_fold_enrichment	Observed overlap divided by expected overlap (universe sizes are given above).
+TU_odds_ratio	Gene-collapsed TU-level Fisher-test odds-ratio estimate.
+TU_p_value	Gene-collapsed TU-level one-sided Fisher overrepresentation p-value.
+TU_FDR_BH	Benjamini–Hochberg-adjusted KEGG overrepresentation p-value, calculated separately for sensitizing and protective gene-collapsed TU sets.
+TU_overlap_members	Identifiers of query TUs assigned to this KEGG term; each TU is counted once per term.
+Column definitions: Murray_comparison	
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+recurrent_direction	Direction of the current-screen gene set being compared.
+Murray_n_conditions_tested	Number of GEN/NEO/TOB source conditions with evaluable ortholog results.
+Murray_same_direction_conditions	Source antibiotics supporting the current recurrent direction.
+Murray_consensus_same_direction_min2	TRUE if at least two source conditions support the current recurrent direction.
+Murray_any_opposite_direction	TRUE if any source condition supports the opposite direction.
+Murray_opposite_direction_conditions	Source antibiotics supporting the opposite direction.
+Murray_GEN_PA14_IDs	Gentamicin in Murray et al. (2015): mapped PA14 ortholog identifiers.
+Murray_GEN_gene	Gentamicin in Murray et al. (2015): reported source gene names.
+Murray_GEN_logFC	Gentamicin in Murray et al. (2015): source log₂ fold change on the original sign convention.
+Murray_NEO_logFC	Neomycin in Murray et al. (2015): source log₂ fold change on the original sign convention.
+Murray_TOB_logFC	Tobramycin in Murray et al. (2015): source log₂ fold change on the original sign convention.
+Murray_GEN_FDR	Gentamicin in Murray et al. (2015): source adjusted p-value.
+Murray_NEO_FDR	Neomycin in Murray et al. (2015): source adjusted p-value.
+Murray_TOB_FDR	Tobramycin in Murray et al. (2015): source adjusted p-value.
+Murray_GEN_direction	Gentamicin in Murray et al. (2015): source effect direction under FDR<0.05 and |logFC|≥1.
+Murray_NEO_direction	Neomycin in Murray et al. (2015): source effect direction under FDR<0.05 and |logFC|≥1.
+Murray_TOB_direction	Tobramycin in Murray et al. (2015): source effect direction under FDR<0.05 and |logFC|≥1.

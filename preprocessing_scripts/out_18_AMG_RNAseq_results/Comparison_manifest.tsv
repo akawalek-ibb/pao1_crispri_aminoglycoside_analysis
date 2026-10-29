@@ -1,0 +1,6 @@
+"comparison_id"	"contrast_label"	"file_name"	"plot_order"	"source_file"	"use_for_GO"
+"atpI"	"atpI silencing"	"PAO1_atpIg1m2_vs_control1_All.xlsx"	1	"RNAseq_data/DE/PAO1_atpIg1m2_vs_control1_All.xlsx"	TRUE
+"accC"	"accC silencing"	"PAO1_accCg1m3_vs_control1_All.xlsx"	2	"RNAseq_data/DE/PAO1_accCg1m3_vs_control1_All.xlsx"	TRUE
+"secA"	"secA silencing"	"PAO1_secAg1m3_vs_control1_All.xlsx"	3	"RNAseq_data/DE/PAO1_secAg1m3_vs_control1_All.xlsx"	TRUE
+"ftsZ"	"ftsZ silencing"	"PAO1_ftsZg1m4_vs_control1_All.xlsx"	4	"RNAseq_data/DE/PAO1_ftsZg1m4_vs_control1_All.xlsx"	TRUE
+"TOB"	"TOB treatment"	"PAO1_control1_TOB_vs_control1_All.xlsx"	5	"RNAseq_data/DE/PAO1_control1_TOB_vs_control1_All.xlsx"	FALSE

@@ -1,0 +1,17 @@
+metric	value	definition
+Negative-fitness genes in union	743	Union across B1 T1, B1 T2, B2 T1, B3 T1 and B4 T1 using raw p_stouffer < 0.05 and medLFC <= -1
+Negative-fitness genes represented in S8A after guide QC	743	Genes from the negative-fitness union with >=1 full-match guide having mean T0 >= 100 reads and finite offset/effect data
+Full-match guides represented in S8A after guide QC	7780	Full-match guides from those genes after mean T0 >= 100 and finite offset/effect filtering
+Estimated offset breakpoint (bp)	95	Breakpoint minimizing gene-equally-weighted residual sum of squares in a continuous piecewise linear model
+Breakpoint bootstrap 95% CI lower (bp)	80	2.5th percentile from whole-gene bootstrap breakpoint estimates
+Breakpoint bootstrap 95% CI upper (bp)	160	97.5th percentile from whole-gene bootstrap breakpoint estimates
+Piecewise slope before breakpoint	0.00902900293730946	Slope of within-gene centered log2FC versus offset before the estimated breakpoint
+Piecewise slope after breakpoint	-0.000127475441108019	Slope of within-gene centered log2FC versus offset after the estimated breakpoint
+Genes contributing within-gene Spearman rho before breakpoint	72	Genes with >=5 retained guides and >=3 distinct offsets at positions <= the estimated breakpoint
+Median within-gene Spearman rho before breakpoint	0.214285714285714	Median gene-specific Spearman correlation between offset and within-gene centered log2FC before the breakpoint
+Q1 within-gene Spearman rho before breakpoint	-0.160714285714286	25th percentile of gene-specific Spearman correlations before the breakpoint
+Q3 within-gene Spearman rho before breakpoint	0.508928571428571	75th percentile of gene-specific Spearman correlations before the breakpoint
+Genes contributing within-gene Spearman rho after breakpoint	419	Genes with >=5 retained guides and >=3 distinct offsets at positions > the estimated breakpoint
+Median within-gene Spearman rho after breakpoint	0.0496240601503759	Median gene-specific Spearman correlation between offset and within-gene centered log2FC after the breakpoint
+Q1 within-gene Spearman rho after breakpoint	-0.214285714285714	25th percentile of gene-specific Spearman correlations after the breakpoint
+Q3 within-gene Spearman rho after breakpoint	0.25	75th percentile of gene-specific Spearman correlations after the breakpoint

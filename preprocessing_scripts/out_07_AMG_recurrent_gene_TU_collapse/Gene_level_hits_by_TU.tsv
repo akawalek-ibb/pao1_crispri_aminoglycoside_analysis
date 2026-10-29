@@ -1,0 +1,157 @@
+"TU_ID"	"n_all_genes_in_TU"	"n_recurrent_genes"	"recurrent_gene_PAO1_IDs"	"recurrent_gene_names"	"n_recurrent_sensitizing_genes"	"recurrent_sensitizing_gene_PAO1_IDs"	"recurrent_sensitizing_gene_names"	"n_recurrent_protective_genes"	"recurrent_protective_gene_PAO1_IDs"	"recurrent_protective_gene_names"	"TU_contains_recurrent_sensitizing"	"TU_contains_recurrent_protective"	"TU_recurrent_direction"	"protective_conditions_union"	"sensitizing_conditions_union"
+"pyrH-frr-uppS-cdsA-dxr-mucP-opr86-PA3647-lpxD"	9	2	"PA3646; PA3650"	"dxr; lpxD"	1	"PA3646"	"lpxD"	1	"PA3650"	"dxr"	TRUE	TRUE	"Both directions"	"TOB 1; AMK"	"TOB 0.4; AMK"
+"PA4421-PA4420-ftsL-ftsI-murE-murF-mraY-murD-ftsW-murG-murC-ddlB-ftsQ-ftsA-ftsZ"	15	14	"PA4407; PA4408; PA4409; PA4410; PA4411; PA4412; PA4413; PA4414; PA4415; PA4416; PA4417; PA4418; PA4420; PA4421"	"ddlB; ftsA; ftsI; ftsQ; ftsW; ftsZ; mraY; murC; murD; murE; murF; murG; PA4420; PA4421"	14	"PA4407; PA4408; PA4409; PA4410; PA4411; PA4412; PA4413; PA4414; PA4415; PA4416; PA4417; PA4418; PA4420; PA4421"	"ddlB; ftsA; ftsI; ftsQ; ftsW; ftsZ; mraY; murC; murD; murE; murF; murG; PA4420; PA4421"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"atpI-atpB-atpE-atpF-atpH-atpA-atpG-atpD-atpC"	9	9	"PA5553; PA5554; PA5555; PA5556; PA5557; PA5558; PA5559; PA5560; PA5561"	"atpA; atpB; atpC; atpD; atpE; atpF; atpG; atpH; atpI"	9	"PA5553; PA5554; PA5555; PA5556; PA5557; PA5558; PA5559; PA5560; PA5561"	"atpA; atpB; atpC; atpD; atpE; atpF; atpG; atpH; atpI"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.025; TOB 0.1; TOB 0.4; AMK"
+"PA2983-PA2982-lpxK-PA2980-kdsB-ptpA-murB"	7	3	"PA2981; PA2982; PA2983"	"lpxK; PA2982; PA2983"	3	"PA2981; PA2982; PA2983"	"lpxK; PA2982; PA2983"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA4940-PA4939-purA"	3	3	"PA4938; PA4939; PA4940"	"PA4939; PA4940; purA"	3	"PA4938; PA4939; PA4940"	"PA4939; PA4940; purA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"ftsH-folP-glmM-tpiA-secG-PA4746.2"	6	3	"PA4747; PA4748; PA4751"	"ftsH; secG; tpiA"	3	"PA4747; PA4748; PA4751"	"ftsH; secG; tpiA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"queA-tgt-PA3822-secD-secF"	5	3	"PA3820; PA3821; PA3822"	"PA3822; secD; secF"	3	"PA3820; PA3821; PA3822"	"PA3822; secD; secF"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA2798-PA2797"	2	2	"PA2797; PA2798"	"PA2797; PA2798"	2	"PA2797; PA2798"	"PA2797; PA2798"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA4783-PA4782"	2	2	"PA4782; PA4783"	"PA4782; PA4783"	2	"PA4782; PA4783"	"PA4782; PA4783"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA4949-PA4948-amiB-mutL-miaA-hfq-PA4943"	7	2	"PA4944; PA4947"	"amiB; hfq"	2	"PA4944; PA4947"	"amiB; hfq"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"cmaX-crfX-cmpX"	3	2	"PA1774; PA1775"	"cmpX; crfX"	2	"PA1774; PA1775"	"cmpX; crfX"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"hflK-hflC"	2	2	"PA4941; PA4942"	"hflC; hflK"	2	"PA4941; PA4942"	"hflC; hflK"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"hslV-hslU-PA5055"	3	2	"PA5053; PA5054"	"hslU; hslV"	2	"PA5053; PA5054"	"hslU; hslV"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"mexA-mexB-oprM"	3	2	"PA0426; PA0427"	"mexB; oprM"	2	"PA0426; PA0427"	"mexB; oprM"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"mexX-mexY"	2	2	"PA2018; PA2019"	"mexX; mexY"	2	"PA2018; PA2019"	"mexX; mexY"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"pyrG-kdsA-eno-PA3634-ygbP"	5	2	"PA3634; PA3635"	"eno; PA3634"	2	"PA3634; PA3635"	"eno; PA3634"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"rpoN-PA4463-ptsN-PA4465-PA4466"	5	2	"PA4463; PA4464"	"PA4463; ptsN"	2	"PA4463; PA4464"	"PA4463; ptsN"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA0006-lptA"	2	1	"PA0005"	"lptA"	1	"PA0005"	"lptA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA0126"	1	1	"PA0126"	"PA0126"	1	"PA0126"	"PA0126"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA0440-PA0439"	2	1	"PA0440"	"PA0440"	1	"PA0440"	"PA0440"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA0742"	1	1	"PA0742"	"PA0742"	1	"PA0742"	"PA0742"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA1418-PA1417-PA1416"	3	1	"PA1418"	"PA1418"	1	"PA1418"	"PA1418"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA1442-fliM-fliN-fliO-fliP-fliQ-fliR-flhB"	8	1	"PA1445"	"fliO"	1	"PA1445"	"fliO"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA2171-PA2172-PA2173"	3	1	"PA2172"	"PA2172"	1	"PA2172"	"PA2172"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA2311-PA2312-PA2313"	3	1	"PA2311"	"PA2311"	1	"PA2311"	"PA2311"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA2543-PA2542"	2	1	"PA2542"	"PA2542"	1	"PA2542"	"PA2542"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA2746"	1	1	"PA2746"	"PA2746"	1	"PA2746"	"PA2746"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA2880"	1	1	"PA2880"	"PA2880"	1	"PA2880"	"PA2880"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA3286-PA3285"	2	1	"PA3286"	"PA3286"	1	"PA3286"	"PA3286"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA3309"	1	1	"PA3309"	"PA3309"	1	"PA3309"	"PA3309"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA3675"	1	1	"PA3675"	"PA3675"	1	"PA3675"	"PA3675"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA3768-PA3767"	2	1	"PA3768"	"PA3768"	1	"PA3768"	"PA3768"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA3776-xseA-PA3778"	3	1	"PA3778"	"PA3778"	1	"PA3778"	"PA3778"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA3969"	1	1	"PA3969"	"PA3969"	1	"PA3969"	"PA3969"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA4423-PA4424-PA4425-PA4426"	4	1	"PA4425"	"PA4425"	1	"PA4425"	"PA4425"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA4852-fis"	2	1	"PA4853"	"fis"	1	"PA4853"	"fis"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"PA4961-PA4962"	2	1	"PA4961"	"PA4961"	1	"PA4961"	"PA4961"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA5152-PA5153-PA5154-PA5155"	4	1	"PA5154"	"PA5154"	1	"PA5154"	"PA5154"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"PA5471.1"	1	1	"PA5471.1"	"PA5471.1"	1	"PA5471.1"	"PA5471.1"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA5494-thrB"	2	1	"PA5494"	"PA5494"	1	"PA5494"	"PA5494"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"PA5568-PA5567"	2	1	"PA5568"	"PA5568"	1	"PA5568"	"PA5568"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"accA-PA3638"	2	1	"PA3639"	"accA"	1	"PA3639"	"accA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"accD-folC-PA3110"	3	1	"PA3112"	"accD"	1	"PA3112"	"accD"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"adk"	1	1	"PA3686"	"adk"	1	"PA3686"	"adk"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"amgR-amgS"	2	1	"PA5200"	"amgR"	1	"PA5200"	"amgR"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"argS-PA5052"	2	1	"PA5052"	"PA5052"	1	"PA5052"	"PA5052"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"armZ-PA5470"	2	1	"PA5471"	"armZ"	1	"PA5471"	"armZ"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"cdhC-cdhA-cdhB-hocS"	4	1	"PA5386"	"cdhA"	1	"PA5386"	"cdhA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"cysK-PA2710"	2	1	"PA2710"	"PA2710"	1	"PA2710"	"PA2710"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"dnaB"	1	1	"PA4931"	"dnaB"	1	"PA4931"	"dnaB"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"estX"	1	1	"PA1771"	"estX"	1	"PA1771"	"estX"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"fabZ-lpxA-lpxB-rnhB"	4	1	"PA3644"	"lpxA"	1	"PA3644"	"lpxA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"fbp-PA5109-PA5108-blc"	4	1	"PA5110"	"fbp"	1	"PA5110"	"fbp"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"fda-PA0556"	2	1	"PA0555"	"fda"	1	"PA0555"	"fda"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"gidA-gidB-soj-spoOJ"	4	1	"PA5563"	"soj"	1	"PA5563"	"soj"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.025; AMK"
+"glnE-ilvE-waaF-waaC-waaG-waaP-wapP-wapG-PA5006"	9	1	"PA5012"	"waaF"	1	"PA5012"	"waaF"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"glpD"	1	1	"PA3584"	"glpD"	1	"PA3584"	"glpD"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"guaB-guaA"	2	1	"PA3769"	"guaA"	1	"PA3769"	"guaA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"gyrA"	1	1	"PA3168"	"gyrA"	1	"PA3168"	"gyrA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"hupB"	1	1	"PA1804"	"hupB"	1	"PA1804"	"hupB"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"ksgA-PA0591-apaH-PA0589"	4	1	"PA0592"	"ksgA"	1	"PA0592"	"ksgA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"minD-minE"	2	1	"PA3244"	"minD"	1	"PA3244"	"minD"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"mpl-ubiX-PA4018"	3	1	"PA4020"	"mpl"	1	"PA4020"	"mpl"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.025; TOB 0.1"
+"nagR-PA3758-PA3759-PA3760-nagE"	5	1	"PA3759"	"PA3759"	1	"PA3759"	"PA3759"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"nalD"	1	1	"PA3574"	"nalD"	1	"PA3574"	"nalD"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.025; TOB 0.1"
+"plcB-PA0027-PA0028"	3	1	"PA0028"	"PA0028"	1	"PA0028"	"PA0028"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"pruR"	1	1	"PA0780"	"pruR"	1	"PA0780"	"pruR"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"pssA-PA4692-PA4691"	3	1	"PA4693"	"pssA"	1	"PA4693"	"pssA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"purD"	1	1	"PA4855"	"purD"	1	"PA4855"	"purD"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"purF-metZ-PA3106"	3	1	"PA3108"	"purF"	1	"PA3108"	"purF"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"purL"	1	1	"PA3763"	"purL"	1	"PA3763"	"purL"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"purM-purN-PA0943"	3	1	"PA0945"	"purM"	1	"PA0945"	"purM"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"puuR-PA5102-PA5101"	3	1	"PA5103"	"puuR"	1	"PA5103"	"puuR"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"rpmH-rnpA"	2	1	"PA5569"	"rnpA"	1	"PA5569"	"rnpA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"secA"	1	1	"PA4403"	"secA"	1	"PA4403"	"secA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"sigX"	1	1	"PA1776"	"sigX"	1	"PA1776"	"sigX"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.4; AMK"
+"tktA-PA0549"	2	1	"PA0548"	"tktA"	1	"PA0548"	"tktA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"trkH-PA3211-PA3212-PA3213-PA3214"	5	1	"PA3210"	"trkH"	1	"PA3210"	"trkH"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; AMK"
+"zipA"	1	1	"PA1528"	"zipA"	1	"PA1528"	"zipA"	0	NA	NA	TRUE	FALSE	"Sensitizing"	NA	"TOB 0.1; TOB 0.4; AMK"
+"nuoA-nuoB-nuoD-nuoE-nuoF-nuoG-nuoH-nuoI-nuoJ-nuoK-nuoL-nuoM-nuoN"	13	12	"PA2637; PA2638; PA2639; PA2640; PA2641; PA2642; PA2643; PA2644; PA2645; PA2646; PA2648; PA2649"	"nuoA; nuoB; nuoD; nuoE; nuoF; nuoG; nuoH; nuoI; nuoJ; nuoK; nuoM; nuoN"	0	NA	NA	12	"PA2637; PA2638; PA2639; PA2640; PA2641; PA2642; PA2643; PA2644; PA2645; PA2646; PA2648; PA2649"	"nuoA; nuoB; nuoD; nuoE; nuoF; nuoG; nuoH; nuoI; nuoJ; nuoK; nuoM; nuoN"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ccmC-PA1478-ccmE-ccmF-ccmG-ccmH-cycH"	7	7	"PA1477; PA1478; PA1479; PA1480; PA1481; PA1482; PA1483"	"ccmC; ccmE; ccmF; ccmG; ccmH; cycH; PA1478"	0	NA	NA	7	"PA1477; PA1478; PA1479; PA1480; PA1481; PA1482; PA1483"	"ccmC; ccmE; ccmF; ccmG; ccmH; cycH; PA1478"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1; AMK"	NA
+"hisI-hisE-tatA-tatB-tatC-PA5071"	6	5	"PA5066; PA5067; PA5068; PA5069; PA5070"	"hisE; hisI; tatA; tatB; tatC"	0	NA	NA	5	"PA5066; PA5067; PA5068; PA5069; PA5070"	"hisE; hisI; tatA; tatB; tatC"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1; AMK"	NA
+"rpsH-rplF-rplR-rpsE-rpmD-rplO-secY-rpmJ"	8	4	"PA4242; PA4244; PA4247; PA4248"	"rplF; rplO; rplR; rpmJ"	0	NA	NA	4	"PA4242; PA4244; PA4247; PA4248"	"rplF; rplO; rplR; rpmJ"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 1; AMK"	NA
+"PA1551-PA1550-copA2-PA1548-PA1547"	5	3	"PA1549; PA1550; PA1551"	"copA2; PA1550; PA1551"	0	NA	NA	3	"PA1549; PA1550; PA1551"	"copA2; PA1550; PA1551"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 1; AMK"	NA
+"PA4431-PA4430-PA4429-sspA-sspB"	5	3	"PA4429; PA4430; PA4431"	"PA4429; PA4430; PA4431"	0	NA	NA	3	"PA4429; PA4430; PA4431"	"PA4429; PA4430; PA4431"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1; AMK"	NA
+"tolQ-tolR-tolA-tolB-oprL-PA0974"	6	3	"PA0969; PA0971; PA0973"	"oprL; tolA; tolQ"	0	NA	NA	3	"PA0969; PA0971; PA0973"	"oprL; tolA; tolQ"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1"	NA
+"ubiE-PA5064-ubiB"	3	3	"PA5063; PA5064; PA5065"	"PA5064; ubiB; ubiE"	0	NA	NA	3	"PA5063; PA5064; PA5065"	"PA5064; ubiB; ubiE"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA2971-rpmF-plsX"	3	2	"PA2970; PA2971"	"PA2971; rpmF"	0	NA	NA	2	"PA2970; PA2971"	"PA2971; rpmF"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA5491-cc4"	2	2	"PA5490; PA5491"	"cc4; PA5491"	0	NA	NA	2	"PA5490; PA5491"	"cc4; PA5491"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1; AMK"	NA
+"ccmA-ccmB"	2	2	"PA1475; PA1476"	"ccmA; ccmB"	0	NA	NA	2	"PA1475; PA1476"	"ccmA; ccmB"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1; AMK"	NA
+"ccoN1-ccoO1"	2	2	"PA1553; PA1554"	"ccoN1; ccoO1"	0	NA	NA	2	"PA1553; PA1554"	"ccoN1; ccoO1"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1; AMK"	NA
+"hemA-prfA-hemK-moeB-murI"	4	2	"PA4665; PA4666"	"hemA; prfA"	0	NA	NA	2	"PA4665; PA4666"	"hemA; prfA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"iscR-iscS-iscU-iscA-hscB-hscA-fdx2-PA3808"	8	2	"PA3811; PA3812"	"hscB; iscA"	0	NA	NA	2	"PA3811; PA3812"	"hscB; iscA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ndk-PA3806-pilF-PA3804-gcpE-hisS-PA3801-bamB-PA3799"	9	2	"PA3799; PA3801"	"PA3799; PA3801"	0	NA	NA	2	"PA3799; PA3801"	"PA3799; PA3801"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"rplU-rpmA"	2	2	"PA4567; PA4568"	"rplU; rpmA"	0	NA	NA	2	"PA4567; PA4568"	"rplU; rpmA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"sucC-sucD"	2	2	"PA1588; PA1589"	"sucC; sucD"	0	NA	NA	2	"PA1588; PA1589"	"sucC; sucD"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"xseB-ispA"	2	2	"PA4042; PA4043"	"ispA; xseB"	0	NA	NA	2	"PA4042; PA4043"	"ispA; xseB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA0241-PA0240"	2	1	"PA0240"	"PA0240"	0	NA	NA	1	"PA0240"	"PA0240"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1"	NA
+"PA0352"	1	1	"PA0352"	"PA0352"	0	NA	NA	1	"PA0352"	"PA0352"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA1118"	1	1	"PA1118"	"PA1118"	0	NA	NA	1	"PA1118"	"PA1118"	FALSE	TRUE	"Protective"	"TOB 0.4; AMK"	NA
+"PA1164"	1	1	"PA1164"	"PA1164"	0	NA	NA	1	"PA1164"	"PA1164"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA1435-PA1436"	2	1	"PA1435"	"PA1435"	0	NA	NA	1	"PA1435"	"PA1435"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA1739-PA1740"	2	1	"PA1740"	"PA1740"	0	NA	NA	1	"PA1740"	"PA1740"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA2069-PA2068-PA2067-PA2066"	4	1	"PA2066"	"PA2066"	0	NA	NA	1	"PA2066"	"PA2066"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA2600-PA2599-PA2598-PA2597"	4	1	"PA2600"	"PA2600"	0	NA	NA	1	"PA2600"	"PA2600"	FALSE	TRUE	"Protective"	"TOB 0.4; TOB 1"	NA
+"PA2915"	1	1	"PA2915"	"PA2915"	0	NA	NA	1	"PA2915"	"PA2915"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA2939"	1	1	"PA2939"	"PA2939"	0	NA	NA	1	"PA2939"	"PA2939"	FALSE	TRUE	"Protective"	"TOB 0.4; AMK"	NA
+"PA3880"	1	1	"PA3880"	"PA3880"	0	NA	NA	1	"PA3880"	"PA3880"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4120-aph"	2	1	"PA4119"	"aph"	0	NA	NA	1	"PA4119"	"aph"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4311-PA4312-PA4313"	3	1	"PA4311"	"PA4311"	0	NA	NA	1	"PA4311"	"PA4311"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4451-murA-hisG"	3	1	"PA4450"	"murA"	0	NA	NA	1	"PA4450"	"murA"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 1"	NA
+"PA4457-PA4458-lptC-lptH-lptB"	5	1	"PA4460"	"lptH"	0	NA	NA	1	"PA4460"	"lptH"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1"	NA
+"PA4570"	1	1	"PA4570"	"PA4570"	0	NA	NA	1	"PA4570"	"PA4570"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4622"	1	1	"PA4622"	"PA4622"	0	NA	NA	1	"PA4622"	"PA4622"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 1"	NA
+"PA4671"	1	1	"PA4671"	"PA4671"	0	NA	NA	1	"PA4671"	"PA4671"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4746-nusA-infB"	3	1	"PA4744"	"infB"	0	NA	NA	1	"PA4744"	"infB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA4968-parE-PA4966-PA4965-parC"	5	1	"PA4965"	"PA4965"	0	NA	NA	1	"PA4965"	"PA4965"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1"	NA
+"PA5225-pepP-ubiH-PA5222-PA5221"	5	1	"PA5225"	"PA5225"	0	NA	NA	1	"PA5225"	"PA5225"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA5238-PA5237-PA5236"	3	1	"PA5237"	"PA5237"	0	NA	NA	1	"PA5237"	"PA5237"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA5289-PA5290"	2	1	"PA5289"	"PA5289"	0	NA	NA	1	"PA5289"	"PA5289"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"PA5397-dgcA-dgcB"	3	1	"PA5399"	"dgcB"	0	NA	NA	1	"PA5399"	"dgcB"	FALSE	TRUE	"Protective"	"TOB 0.4; TOB 1"	NA
+"PA5492"	1	1	"PA5492"	"PA5492"	0	NA	NA	1	"PA5492"	"PA5492"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"azu"	1	1	"PA4922"	"azu"	0	NA	NA	1	"PA4922"	"azu"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"birA-PA4279-PA4278"	3	1	"PA4279"	"PA4279"	0	NA	NA	1	"PA4279"	"PA4279"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ccoP1"	1	1	"PA1552"	"ccoP1"	0	NA	NA	1	"PA1552"	"ccoP1"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ccoQ1"	1	1	"PA1552.1"	"ccoQ1"	0	NA	NA	1	"PA1552.1"	"ccoQ1"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1; AMK"	NA
+"ccoQ2"	1	1	"PA1555.1"	"ccoQ2"	0	NA	NA	1	"PA1555.1"	"ccoQ2"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"cycB"	1	1	"PA5300"	"cycB"	0	NA	NA	1	"PA5300"	"cycB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"dnaA-dnaN-recF-gyrB"	4	1	"PA0002"	"dnaN"	0	NA	NA	1	"PA0002"	"dnaN"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1; AMK"	NA
+"dxs"	1	1	"PA4044"	"dxs"	0	NA	NA	1	"PA4044"	"dxs"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"fabA-fabB"	2	1	"PA1609"	"fabB"	0	NA	NA	1	"PA1609"	"fabB"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1"	NA
+"fabF1-pabC-PA2963-tmk-holB-pilZ-PA2959"	7	1	"PA2962"	"tmk"	0	NA	NA	1	"PA2962"	"tmk"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1"	NA
+"fapA-fapB-fapC-fapD-fapE"	5	1	"PA1952"	"fapE"	0	NA	NA	1	"PA1952"	"fapE"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"gltA"	1	1	"PA1580"	"gltA"	0	NA	NA	1	"PA1580"	"gltA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"hacB"	1	1	"PA0305"	"hacB"	0	NA	NA	1	"PA0305"	"hacB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"hemC-hemD-PA5258-PA5257"	4	1	"PA5260"	"hemC"	0	NA	NA	1	"PA5260"	"hemC"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"hemE"	1	1	"PA5034"	"hemE"	0	NA	NA	1	"PA5034"	"hemE"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"hemF-aroE"	2	1	"PA0024"	"hemF"	0	NA	NA	1	"PA0024"	"hemF"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ispB"	1	1	"PA4569"	"ispB"	0	NA	NA	1	"PA4569"	"ispB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"lbcA-lolB-ipk-PA4669.1-prs"	5	1	"PA4667"	"lbcA"	0	NA	NA	1	"PA4667"	"lbcA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"lpxC"	1	1	"PA4406"	"lpxC"	0	NA	NA	1	"PA4406"	"lpxC"	FALSE	TRUE	"Protective"	"TOB 0.1; TOB 1"	NA
+"obg-proB-PA4564"	3	1	"PA4566"	"obg"	0	NA	NA	1	"PA4566"	"obg"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"panB-panC"	2	1	"PA4729"	"panB"	0	NA	NA	1	"PA4729"	"panB"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"phaC1"	1	1	"PA5056"	"phaC1"	0	NA	NA	1	"PA5056"	"phaC1"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ribA-PA4046-PA4045"	3	1	"PA4047"	"ribA"	0	NA	NA	1	"PA4047"	"ribA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"ribF-ileS-lspA-PA4558-lytB"	5	1	"PA4559"	"lspA"	0	NA	NA	1	"PA4559"	"lspA"	FALSE	TRUE	"Protective"	"TOB 0.025; TOB 0.1; TOB 1"	NA
+"rne"	1	1	"PA2976"	"rne"	0	NA	NA	1	"PA2976"	"rne"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"rplK-rplA"	2	1	"PA4273"	"rplA"	0	NA	NA	1	"PA4273"	"rplA"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"rplM-rpsI"	2	1	"PA4432"	"rpsI"	0	NA	NA	1	"PA4432"	"rpsI"	FALSE	TRUE	"Protective"	"TOB 0.025; AMK"	NA
+"rplS"	1	1	"PA3742"	"rplS"	0	NA	NA	1	"PA3742"	"rplS"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"rppH"	1	1	"PA0336"	"rppH"	0	NA	NA	1	"PA0336"	"rppH"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"rpsG-fusA1-tufA"	3	1	"PA4266"	"fusA1"	0	NA	NA	1	"PA4266"	"fusA1"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"spuA-spuB-spuC-spuD-spuE-spuF-spuG-spuH"	8	1	"PA0304"	"spuH"	0	NA	NA	1	"PA0304"	"spuH"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"thiD-thiE-hemL"	3	1	"PA3977"	"hemL"	0	NA	NA	1	"PA3977"	"hemL"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA
+"toxA"	1	1	"PA1148"	"toxA"	0	NA	NA	1	"PA1148"	"toxA"	FALSE	TRUE	"Protective"	"TOB 0.4; TOB 1; AMK"	NA
+"ubiG-PA3172-PA3173"	3	1	"PA3171"	"ubiG"	0	NA	NA	1	"PA3171"	"ubiG"	FALSE	TRUE	"Protective"	"TOB 1; AMK"	NA

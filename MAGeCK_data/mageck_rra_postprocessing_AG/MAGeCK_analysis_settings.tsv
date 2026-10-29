@@ -1,0 +1,37 @@
+setting	value
+analysis	MAGeCK-only postprocessing + QC
+getwd()	/home/akw/Desktop/AKW_DATA/CRISPRi/wyniki/NGS/2026_CRISPRi_ant_reanalysis_all_batches/AMG_scripts_min_Git
+MAGECK_DIR	MAGeCK_data/mageck_rra_raw_AG
+PREPROCESS_CONTRAST_MANIFEST_FILE	MAGeCK_data/mageck_rra_raw_AG/all_batches_MAGeCK_contrast_manifest.tsv
+VERIFY_AGAINST_PREPROCESS_MANIFEST	TRUE
+OUTPUT_DIR	MAGeCK_data/mageck_rra_postprocessing_AG
+MAGECK_FDR_CUT	0.05
+STRICT_EXPECTED_COUNTS	TRUE
+EXPECTED_TOTAL_CONTRASTS	19
+EXPECTED_DRUG_CONTRASTS	7
+EXPECTED_BASELINE_CONTRASTS	5
+EXPECTED_TREATED_VS_T0_CONTRASTS	7
+EXPECTED_T2_CONTRASTS	3
+RECURRENCE_TIMINGS	T1
+RECURRENCE_DRUGS	TOB,AMK
+TOB1_TOTALNORM_FILE	MAGeCK_data/mageck_rra_raw_AG/b4/results/b4_TOB_1_T1_vs_None_0_T1_TOTALNORM.gene_summary.txt
+USE_TOB1_CONCORDANT_ONLY_FOR_RECURRENCE	TRUE
+TOB1_PRIMARY_CATALOGUE_RULE	median-normalized MAGeCK remains the primary seven-condition catalogue
+TOB1_RECURRENCE_RULE	only B4 TOB 1 T1 recurrence support requires the same directional FDR<cutoff call under median and total normalization; all other TOB doses and AMK are unchanged
+LOW_GUIDE_COUNT_WARN	3
+HIGH_ZERO_FRACTION_WARN	0.5
+LOW_DETECTED_GUIDE_FRACTION_WARN	0.5
+LOW_REPLICATE_SPEARMAN_WARN	0.8
+PCA_TOP_VARIABLE_GUIDES	5000
+TOP_N_PER_DIRECTION	50
+primary_gene_call	MAGeCK gene-level directional FDR
+drug_negative_selection_label	sensitizing
+drug_positive_selection_label	tolerance_inducing
+baseline_negative_selection_label	fitness_decreasing
+baseline_positive_selection_label	fitness_increasing
+treated_vs_T0_negative_selection_label	treated_fitness_decreasing
+treated_vs_T0_positive_selection_label	treated_fitness_increasing
+treated_vs_T0_is_interaction_call	FALSE - interaction calls come only from treatment vs matched untreated same-timing controls; recurrence uses only TOB/AMK T1; T2 and FBS are retained in the catalogue but excluded from recurrence; only TOB 1 recurrence support receives the separate normalization-sensitivity concordance filter
+QC_normalization	log2(CPM+1) from raw full-match counts for diagnostics only
+QC_affects_MAGeCK_results	FALSE
+external_method_dependency	none

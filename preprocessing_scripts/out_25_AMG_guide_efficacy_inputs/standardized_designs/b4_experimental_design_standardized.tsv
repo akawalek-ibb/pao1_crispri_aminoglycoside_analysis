@@ -1,0 +1,13 @@
+condition	experiment	drug	dose	timing	rep	group
+"B4_1-Lib1-T1"	"tube"	"None"	0	"T1"	1	"None_0_T1"
+"B4_2-Lib1-T1"	"tube"	"None"	0	"T1"	2	"None_0_T1"
+"B4_3-Lib1-T1"	"tube"	"None"	0	"T1"	3	"None_0_T1"
+"B4_16-TOB-0-025"	"tube"	"TOB"	0.025	"T1"	1	"TOB_0.025_T1"
+"B4_17-TOB-0-025"	"tube"	"TOB"	0.025	"T1"	2	"TOB_0.025_T1"
+"B4_18-TOB-0-1"	"tube"	"TOB"	0.1	"T1"	1	"TOB_0.1_T1"
+"B4_19-TOB-0-1"	"tube"	"TOB"	0.1	"T1"	2	"TOB_0.1_T1"
+"B4_20-TOB-1"	"tube"	"TOB"	1	"T1"	1	"TOB_1_T1"
+"B4_21-TOB-1"	"tube"	"TOB"	1	"T1"	2	"TOB_1_T1"
+"B4_28-Lib1-T0"	"tube"	"None"	0	"T0"	1	"None_0_T0"
+"B4_29-Lib1-T0"	"tube"	"None"	0	"T0"	2	"None_0_T0"
+"B4_30-Lib1-T0"	"tube"	"None"	0	"T0"	3	"None_0_T0"

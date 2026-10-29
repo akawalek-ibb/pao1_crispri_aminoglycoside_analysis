@@ -1,0 +1,10 @@
+condition	shift	timing	experiment	rep	verbose	drug	dose
+"B2_1-T1_MH"	"MH"	"T1"	"tube"	1	"None"	"None"	0
+"B2_2-T1_MH"	"MH"	"T1"	"tube"	2	"None"	"None"	0
+"B2_3-T1_MH"	"MH"	"T1"	"tube"	3	"None"	"None"	0
+"B2_16-T1_AMK"	"MH"	"T1"	"tube"	1	"AMK"	"AMK"	2
+"B2_17-T1_AMK"	"MH"	"T1"	"tube"	2	"AMK"	"AMK"	2
+"B2_18-T1_AMK"	"MH"	"T1"	"tube"	3	"AMK"	"AMK"	2
+"B2_25-T0_MH"	"MH"	"T0"	"tube"	1	"None"	"None"	0
+"B2_26-T0_MH"	"MH"	"T0"	"tube"	2	"None"	"None"	0
+"B2_27-T0_MH"	"MH"	"T0"	"tube"	3	"None"	"None"	0

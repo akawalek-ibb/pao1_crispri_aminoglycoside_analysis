@@ -1,0 +1,207 @@
+#!/usr/bin/env bash
+# PAO1 pooled CRISPRi screen: raw sequencing reads
+#
+# GEO Series: GSE349013
+# BioProject: PRJNA1537088; SRA study: SRP741077
+# https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE349013
+#
+# sample_header is the exact column name in CRISPRi_guide_raw_counts.tsv.gz.
+# original_sample_ID is the identifier used by the supplied batch count/design
+# files.
+#
+#
+# GEO_sample   sample_header          original_sample_ID      SRA_run(s)
+# -----------  ---------------------  ----------------------  ----------
+# GSM10085345  B1_01_T0_MH            B1_1-T0_MH              SRR40905732
+# GSM10085346  B1_02_T0_MH            B1_2-T0_MH              SRR40905731
+# GSM10085347  B1_03_T1_MH            B1_3-T1_MH              SRR40905730
+# GSM10085348  B1_04_T1_MH            B1_4-T1_MH              SRR40905729
+# GSM10085349  B1_05_T1_TOB0.4        B1_5-T1_TOB             SRR40905728
+# GSM10085350  B1_06_T1_TOB0.4        B1_6-T1_TOB             SRR40905727
+# GSM10085351  B1_07_T2_MH            B1_7-T2_MH              SRR40905726
+# GSM10085352  B1_08_T2_MH            B1_8-T2_MH              SRR40905725
+# GSM10085353  B1_09_T2_TOB0.4        B1_9-T2_TOB             SRR40905724
+# GSM10085354  B1_10_T2_TOB0.4        B1_10-T2_TOB            SRR40905723
+# GSM10085355  B2_01_T1_MH            B2_1-T1_MH              SRR40905722
+# GSM10085356  B2_02_T1_MH            B2_2-T1_MH              SRR40905721
+# GSM10085357  B2_03_T1_MH            B2_3-T1_MH              SRR40905720
+# GSM10085358  B2_16_T1_AMK2          B2_16-T1_AMK            SRR40905719
+# GSM10085359  B2_17_T1_AMK2          B2_17-T1_AMK            SRR40905718
+# GSM10085360  B2_18_T1_AMK2          B2_18-T1_AMK            SRR40905717
+# GSM10085361  B2_25_T0_MH            B2_25-T0_MH             SRR40905716
+# GSM10085362  B2_26_T0_MH            B2_26-T0_MH             SRR40905715
+# GSM10085363  B2_27_T0_MH            B2_27-T0_MH             SRR40905714
+# GSM10085364  B3_01_T1_MH            B3_1-T1_MH              SRR40905713
+# GSM10085365  B3_02_T1_MH            B3_2-T1_MH              SRR40905712
+# GSM10085366  B3_03_T1_MH            B3_3-T1_MH              SRR40905711
+# GSM10085367  B3_22_T1_FBS           B3_22-T1_FBS            SRR40905710
+# GSM10085368  B3_23_T1_FBS           B3_23-T1_FBS            SRR40905709
+# GSM10085369  B3_24_T1_FBS           B3_24-T1_FBS            SRR40905708
+# GSM10085370  B3_25_T0_MH            B3_25-T0_MH             SRR40905707
+# GSM10085371  B3_26_T0_MH            B3_26-T0_MH             SRR40905706
+# GSM10085372  B3_27_T0_MH            B3_27-T0_MH             SRR40905705
+# GSM10085373  B4_01_T1_MH            B4_1-Lib1-T1            SRR40905704
+# GSM10085374  B4_02_T1_MH            B4_2-Lib1-T1            SRR40905703
+# GSM10085375  B4_03_T1_MH            B4_3-Lib1-T1            SRR40905702
+# GSM10085376  B4_16_T1_TOB0.025      B4_16-TOB-0-025         SRR40905701
+# GSM10085377  B4_17_T1_TOB0.025      B4_17-TOB-0-025         SRR40905700
+# GSM10085378  B4_18_T1_TOB0.1        B4_18-TOB-0-1           SRR40905699
+# GSM10085379  B4_19_T1_TOB0.1        B4_19-TOB-0-1           SRR40905698
+# GSM10085380  B4_20_T1_TOB1          B4_20-TOB-1             SRR40905697
+# GSM10085381  B4_21_T1_TOB1          B4_21-TOB-1             SRR40905696
+# GSM10085382  B4_28_T0_MH            B4_28-Lib1-T0           SRR40905695
+# GSM10085383  B4_29_T0_MH            B4_29-Lib1-T0           SRR40905694
+# GSM10085384  B4_30_T0_MH            B4_30-Lib1-T0           SRR40905693
+#
+# DOWNLOAD AND CONVERT
+# Run from Barcode_counting/seq_data/.
+# All 40 runs: bash sequencing_reads_howtoget_info.txt
+# One run:    bash sequencing_reads_howtoget_info.txt SRR40905732
+# Several:    bash sequencing_reads_howtoget_info.txt SRR40905732 SRR40905731
+# Command-line accessions override the default RUNS list below.
+# Requires prefetch, fasterq-dump, gzip and find in PATH.
+# Cached .sra/.sralite files and complete compressed FASTQ pairs are reused.
+
+set -euo pipefail
+
+RUNS=(
+    SRR40905732  # GSM10085345 B1_01_T0_MH
+    SRR40905731  # GSM10085346 B1_02_T0_MH
+    SRR40905730  # GSM10085347 B1_03_T1_MH
+    SRR40905729  # GSM10085348 B1_04_T1_MH
+    SRR40905728  # GSM10085349 B1_05_T1_TOB0.4
+    SRR40905727  # GSM10085350 B1_06_T1_TOB0.4
+    SRR40905726  # GSM10085351 B1_07_T2_MH
+    SRR40905725  # GSM10085352 B1_08_T2_MH
+    SRR40905724  # GSM10085353 B1_09_T2_TOB0.4
+    SRR40905723  # GSM10085354 B1_10_T2_TOB0.4
+    SRR40905722  # GSM10085355 B2_01_T1_MH
+    SRR40905721  # GSM10085356 B2_02_T1_MH
+    SRR40905720  # GSM10085357 B2_03_T1_MH
+    SRR40905719  # GSM10085358 B2_16_T1_AMK2
+    SRR40905718  # GSM10085359 B2_17_T1_AMK2
+    SRR40905717  # GSM10085360 B2_18_T1_AMK2
+    SRR40905716  # GSM10085361 B2_25_T0_MH
+    SRR40905715  # GSM10085362 B2_26_T0_MH
+    SRR40905714  # GSM10085363 B2_27_T0_MH
+    SRR40905713  # GSM10085364 B3_01_T1_MH
+    SRR40905712  # GSM10085365 B3_02_T1_MH
+    SRR40905711  # GSM10085366 B3_03_T1_MH
+    SRR40905710  # GSM10085367 B3_22_T1_FBS
+    SRR40905709  # GSM10085368 B3_23_T1_FBS
+    SRR40905708  # GSM10085369 B3_24_T1_FBS
+    SRR40905707  # GSM10085370 B3_25_T0_MH
+    SRR40905706  # GSM10085371 B3_26_T0_MH
+    SRR40905705  # GSM10085372 B3_27_T0_MH
+    SRR40905704  # GSM10085373 B4_01_T1_MH
+    SRR40905703  # GSM10085374 B4_02_T1_MH
+    SRR40905702  # GSM10085375 B4_03_T1_MH
+    SRR40905701  # GSM10085376 B4_16_T1_TOB0.025
+    SRR40905700  # GSM10085377 B4_17_T1_TOB0.025
+    SRR40905699  # GSM10085378 B4_18_T1_TOB0.1
+    SRR40905698  # GSM10085379 B4_19_T1_TOB0.1
+    SRR40905697  # GSM10085380 B4_20_T1_TOB1
+    SRR40905696  # GSM10085381 B4_21_T1_TOB1
+    SRR40905695  # GSM10085382 B4_28_T0_MH
+    SRR40905694  # GSM10085383 B4_29_T0_MH
+    SRR40905693  # GSM10085384 B4_30_T0_MH
+)
+
+#test with one sample
+#RUNS=(
+#    SRR40905727  # GSM10085350 B1_06_T1_TOB0.4
+#)
+
+
+if (( $# > 0 )); then
+    RUNS=("$@")
+fi
+
+THREADS=8
+SRA_DIR="$PWD/sra_cache"
+FASTQ_DIR="$PWD/downloaded_fastq"
+TMP_DIR="$PWD/sra_tmp"
+
+die() { printf '%s\n' "$*" >&2; exit 1; }
+
+(( ${#RUNS[@]} > 0 )) || die 'No SRA runs selected.'
+for run in "${RUNS[@]}"; do
+    [[ "$run" =~ ^SRR[0-9]+$ ]] || die "Invalid SRA run accession: $run"
+done
+for tool in prefetch fasterq-dump gzip find; do
+    command -v "$tool" >/dev/null || die "Required tool missing: $tool"
+done
+mkdir -p "$SRA_DIR" "$FASTQ_DIR" "$TMP_DIR"
+
+# Look for the archive file itself, including the SRA Lite format.
+find_archive() {
+    local accession="$1" suffix found
+    for suffix in sra sralite; do
+        found=$(find "$SRA_DIR" -type f -name "${accession}.${suffix}" -print -quit)
+        if [[ -n "$found" ]]; then
+            printf '%s\n' "$found"
+            return 0
+        fi
+    done
+    return 1
+}
+
+for run in "${RUNS[@]}"; do
+    # Some toolkit versions retain the archive extension in FASTQ names.
+    complete=false
+    for stem in "$run" "$run.sra" "$run.sralite"; do
+        if [[ -s "$FASTQ_DIR/${stem}_1.fastq.gz" && -s "$FASTQ_DIR/${stem}_2.fastq.gz" ]]; then
+            complete=true
+            break
+        fi
+    done
+    if "$complete"; then
+        printf 'Already converted: %s\n' "$run"
+        continue
+    fi
+
+    # Preserve incomplete outputs for inspection rather than overwriting them.
+    for stem in "$run" "$run.sra" "$run.sralite"; do
+        for suffix in _1.fastq _2.fastq _1.fastq.gz _2.fastq.gz; do
+            [[ ! -e "$FASTQ_DIR/${stem}${suffix}" ]] ||
+                die "Existing incomplete FASTQ output for $run: $FASTQ_DIR/${stem}${suffix}. Inspect it before retrying."
+        done
+    done
+
+    if ! archive=$(find_archive "$run"); then
+        prefetch "$run" --max-size u -O "$SRA_DIR/$run"
+        archive=$(find_archive "$run") || die "No .sra or .sralite archive found for $run."
+    else
+        printf 'Using cached archive: %s\n' "$archive"
+    fi
+
+    fasterq-dump "$archive" --split-files -e "$THREADS" \
+        -t "$TMP_DIR" -O "$FASTQ_DIR"
+
+    for fastq in "$FASTQ_DIR/${run}"*.fastq; do
+        if [[ -f "$fastq" ]]; then
+            gzip -- "$fastq"
+        fi
+    done
+done
+
+printf 'FASTQ directory: %s\n' "$FASTQ_DIR"
+printf '%s\n' 'Next: bash rename_sra_fastq.sh --dry-run   # optional preview'
+printf '%s\n' '      bash rename_sra_fastq.sh             # move and rename downloaded pairs'
+
+# RENAME FOR BARCODE COUNTING
+# Save rename_sra_fastq.sh beside this file and run it from seq_data/.
+# It reads the mapping table above and handles whichever runs are downloaded.
+# It moves files into b1/, b2/, b3/ or b4/ without changing their contents.
+# Example:
+#   downloaded_fastq/SRR40905732_1.fastq.gz -> b1/B1_1-T0_MH_R1.fastq.gz
+#   downloaded_fastq/SRR40905732_2.fastq.gz -> b1/B1_1-T0_MH_R2.fastq.gz
+# original_sample_ID is used because count_Lib1_barcodes.sh expects those IDs.
+# B4 therefore keeps its original Lib1 filenames; GEO/count-matrix labels stay
+# available in sample_header. Existing destination files are never overwritten.
+# The downloader leaves named b1-b4 files alone; rerun conversion only when needed.
+#
+# References:
+# https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE349013
+# https://www.ncbi.nlm.nih.gov/sra/docs/sradownload/
+# https://github.com/ncbi/sra-tools/wiki/08.-prefetch-and-fasterq-dump

@@ -1,0 +1,57 @@
+Supplementary Table S4	CRISPRi library composition and representation.
+	Library representation of {{n_guides}} guides, assessed using untreated T0 counts. Raw guide read counts are provided separately in CRISPRi_guide_raw_counts.tsv.gz; the deposited data are available under GEO accession GSE349013: https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE349013
+Worksheets	Content
+Sample_key	sample labels for all sequenced libraries from this study. Tab includes metadata and the corresponding original analysis identifiers for crossreference.
+Guide_coverage	Guide class, untreated-T0 detection and representation flags, and mean untreated-T0 counts by batch.
+Gene_coverage	Per-gene designed, detected and cloned guide counts.
+Design_summary	Representation summaries for the three library-design groups.
+Library_summary	Guide cloning summary.
+Methods and interpretation	Definitions
+Detection	At least {{detection_reads}} read in at least one untreated T0 sample.
+Representation criterion	Mean untreated-T0 read count ≥{{cloning_reads}} in at least one batch. This is an operational measure of guide representation.
+Column definitions: Sample_key	
+label	Standardized sample label matching the raw-count column name in the GEO file exactly.
+batch	Experimental batch identifier (B1–B4).
+drug or treatment	Treatment label (antibiotic or FBS). None denotes the untreated Mueller–Hinton culture.
+dose	Antibiotic dose in micrograms per mL; FBS concentration in percent serum.
+timing	Sampling time point: T0 initial library, T1 first induction interval, T2 later interval.
+rep	Biological replicate
+original_sample_id	Original sample label, including its batch prefix (cross-reference in the existing analysis files).
+Column definitions: Guide_coverage	
+spacer	spacer sequence
+guide_category	Guide class: perfect (full-match), mismatch or control (non-targeting).
+detected_any_T0	TRUE if at least {{detection_reads}} read was observed in any untreated T0 sample.
+cloned_any_batch_ge10	TRUE if the mean untreated T0 count reached at least {{cloning_reads}} reads in at least one batch.
+B1-B4_mean_no_drug_T0	Mean raw guide read count across untreated T0 samples in B1-B4.
+Column definitions: Gene_coverage	
+locus_tag	Genome-specific locus identifier.
+gene_name	Gene symbol or locus-derived name.
+design_call	Library design category.
+n_perfect_designed	Number of full-match guides designed. Mismatch parent (reference-guides) are a subset of full-match-guide counts.
+n_mismatch_designed	Number of mismatch guides designed.
+n_perfect_cloned_10	Number of full-match guides passing the mean untreated T0 ≥{{cloning_reads}} reads representation rule.
+n_mismatch_cloned_10	Number of mismatch guides passing the mean untreated T0 ≥{{cloning_reads}} reads representation rule.
+n_perfect_detected_any_T0	Number of full-match guides detected in at least one untreated T0 sample.
+n_mismatch_detected_any_T0	Number of mismatch guides detected in at least one untreated T0 sample.
+Column definitions: Design_summary	
+design_call	Library design category.
+n_genes_with_designed_perfect	Number of genes with at least one designed full-match guide.
+n_genes_with_perfect_cloned_10	Number of genes with at least one full-match guide passing mean untreated-T0 ≥{{cloning_reads}}.
+n_genes_without_perfect_cloned_10	Number of genes with no full-match guide passing mean untreated-T0 ≥{{cloning_reads}}.
+total_perfect_designed	Number of full-match guides designed.
+total_perfect_cloned_10	Number of full-match guides passing the mean untreated T0 ≥{{cloning_reads}} representation rule.
+fraction_perfect_cloned_10	Full-match guides passing mean untreated-T0 ≥{{cloning_reads}} divided by full-match guides designed; fraction on a 0–1 scale.
+mean_perfect_designed_per_gene	Mean per gene of full-match guides designed.
+median_perfect_designed_per_gene	Median per gene of full-match guides designed.
+mean_perfect_cloned_10_per_gene	Mean per gene of full-match guides passing the mean untreated T0 ≥{{cloning_reads}} representation rule.
+median_perfect_cloned_10_per_gene	Median per gene of full-match guides passing the mean untreated T0 ≥{{cloning_reads}} representation rule.
+total_mismatch_designed	Number of mismatch guides designed.
+total_mismatch_cloned_10	Number of mismatch guides passing the mean untreated T0 ≥{{cloning_reads}} representation rule.
+Column definitions: Library_summary	
+guide_type	Guide class.
+n_guides	Number of guide sequences in the indicated group.
+n_detected_any_T0	Number of guides detected in at least one untreated T0 sample.
+pct_detected_any_T0	Percentage of detected guides  relative to total guides in the guide group.
+n_cloned_meanT0_ge10	Number of guides passing the source mean untreated-T0 ≥{{cloning_reads}} representation criterion.
+pct_cloned_meanT0_ge10	Percentage of guides passing mean untreated-T0 ≥{{cloning_reads}} reads/ total guides in the indicated guide group.
+Missing counts	NA entries are treated as zero for representation calculations. Displayed batch means retain NA when all untreated-T0 counts in that batch are NA. Means are displayed to one decimal; representation flags use unrounded values.

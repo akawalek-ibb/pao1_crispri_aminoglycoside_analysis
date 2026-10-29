@@ -1,0 +1,4 @@
+design_call	n_genes_with_designed_perfect	n_genes_with_perfect_cloned_10	n_genes_without_perfect_cloned_10	total_perfect_designed	total_perfect_cloned_10	fraction_perfect_cloned_10	mean_perfect_designed_per_gene	median_perfect_designed_per_gene	mean_perfect_cloned_10_per_gene	median_perfect_cloned_10_per_gene	total_mismatch_designed	total_mismatch_cloned_10
+main_essential	374	374	0	8654	7939	0.917379246591172	23.1390374331551	28	21.2272727272727	24	35141	33955
+other_essential	1035	1035	0	9656	9041	0.936309030654515	9.32946859903382	10	8.73526570048309	9	19603	19082
+non_essential	4148	4138	10	8292	8061	0.972141823444284	1.99903567984571	2	1.94334619093539	2	39	37

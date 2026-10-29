@@ -1,0 +1,7 @@
+"batch"	"condition"	"comparison_id"	"display_label"	"prefix"	"plot_order"	"count_for_recurrence"	"drug"	"dose"	"timing"
+"b4"	"TOB_0.025_T1 - None_0_T1"	"B4_TOB_0.025_T1_vs_None_T1"	"TOB 0.025"	"TOB_0.025"	1	TRUE	"TOB"	0.025	"T1"
+"b4"	"TOB_0.1_T1 - None_0_T1"	"B4_TOB_0.1_T1_vs_None_T1"	"TOB 0.1"	"TOB_0.1"	2	TRUE	"TOB"	0.1	"T1"
+"b1"	"TOB_0.4_T1 - None_0_T1"	"B1_TOB_0.4_T1_vs_None_T1"	"TOB 0.4"	"TOB_0.4"	3	TRUE	"TOB"	0.4	"T1"
+"b4"	"TOB_1_T1 - None_0_T1"	"B4_TOB_1_T1_vs_None_T1"	"TOB 1"	"TOB_1"	4	TRUE	"TOB"	1	"T1"
+"b1"	"TOB_0.4_T2 - None_0_T2"	"B1_TOB_0.4_T2_vs_None_T2"	"TOB 0.4 T2"	"TOB_T2"	5	FALSE	"TOB"	0.4	"T2"
+"b2"	"AMK_2_T1 - None_0_T1"	"B2_AMK_2_T1_vs_None_T1"	"AMK"	"AMK"	6	TRUE	"AMK"	2	"T1"

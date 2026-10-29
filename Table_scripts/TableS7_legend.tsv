@@ -1,0 +1,66 @@
+field	description
+Supplementary Table S7	CRISPRi gene and pathway effects in MH and fetal bovine serum.
+Worksheets	Content
+Stouffer_FBS_vs_MH_significant	{{n_stouffer}} significant direct FBS-versus-MH gene records (raw p < {{p_stouffer}} and |medLFC| ≥ {{lfc_cut}}), with absolute MH/FBS effects for context.
+MAGeCK_FBS_vs_MH_significant	{{n_mageck}} genes with directional MAGeCK FDR < {{mageck_fdr}} in the direct B3 comparison. Significance in both directions is labelled ambiguous_bidirectional.
+Sev_Sens_EK50_MH_FBS_vs_T0	{{n_absolute}} gene records with separate MH and FBS effects, sensitivity/EK50 estimates and evaluation statuses.
+KEGG_MH_vs_FBS_Fig2H	{{n_pathways}} KEGG pathways with MH/FBS fitness summaries and GSEA statistics. Fig. 2H displays the selected pathways with sufficient paired representation.
+Methods and remarks	
+Direct Stouffer calls	Raw p_stouffer < {{p_stouffer}} and |medLFC| ≥ {{lfc_cut}}. Negative direct effects indicate greater depletion in FBS.
+Direct MAGeCK calls	Directional MAGeCK RRA FDR < {{mageck_fdr}}, with no gene-LFC threshold.
+Absolute vulnerability	MH and FBS profiles were estimated separately relative to the shared T0, using the same vulnerability master as Table S5. Sensitivity is a sustained binned log₂FC ≤ −1 crossing. EK50 is the fitted relative efficacy at half the effect at efficacy 1 relative to zero.
+KEGG / GSEA	Paired, KEGG-annotated gene symbols were ranked by FBS-minus-MH medLFC and tested against sets of {{gsea_min}}–{{gsea_max}} represented genes using fgsea with {{gsea_nperm}} permutations. NES normalizes ES against permutation-derived null scores, and pathway p-values were adjusted by the Benjamini–Hochberg method.
+Column definitions: Stouffer_FBS_vs_MH_significant	
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene symbol
+direct_FBS_vs_MH_medLFC	B3 FBS T1 vs MH T1 median adjusted full-match-guide log₂ fold change. Negative means greater depletion in FBS.
+direct_FBS_vs_MH_p_stouffer	Raw gene-level Stouffer p-value for the direct B3 FBS T1 versus MH T1 contrast.
+MH_medLFC_vs_T0	MH T1 versus T0 median adjusted full-match-guide log₂ fold change.
+MH_p_stouffer_vs_T0	MH T1 versus T0 gene-level Stouffer p-value.
+FBS_medLFC_vs_T0	FBS T1 versus T0 median adjusted full-match-guide log₂ fold change.
+FBS_p_stouffer_vs_T0	FBS T1 versus T0 gene-level Stouffer p-value.
+Column definitions: MAGeCK_FBS_vs_MH_significant	
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene symbol.
+gene_lfc	MAGeCK gene-level log₂ fold change for the indicated contrast.
+selection_direction	MAGeCK directional classification: negative_selection, positive_selection or ambiguous_bidirectional.
+neg_fdr	MAGeCK negative-selection RRA false-discovery rate.
+pos_fdr	MAGeCK positive-selection RRA false-discovery rate.
+neg_pvalue	MAGeCK negative-selection nominal p-value.
+pos_pvalue	MAGeCK positive-selection nominal p-value.
+neg_score	MAGeCK negative-selection RRA score.
+pos_score	MAGeCK positive-selection RRA score.
+neg_rank	MAGeCK negative-selection rank in the tested gene universe.
+pos_rank	MAGeCK positive-selection rank in the tested gene universe.
+num_guides	Number of guides retained for MAGeCK gene-level analysis.
+Column definitions: Sev_Sens_EK50_MH_FBS_vs_T0	
+PAO1_ID	PAO1 locus identifier.
+gene_name	Gene name.
+MH_medLFC_vs_T0	MH T1 versus T0 median adjusted full-match-guide log₂ fold change.
+MH_p_stouffer_vs_T0	MH T1 versus T0 gene-level Stouffer p-value.
+FBS_medLFC_vs_T0	FBS T1 versus T0 median adjusted full-match-guide log₂ fold change.
+FBS_p_stouffer_vs_T0	FBS T1 versus T0 raw gene-level Stouffer p-value.
+MH_sensitivity	MH T1 versus T0: Predicted efficacy at the sustained binned log₂FC≤−1 crossing.
+MH_sensitivity_status	MH T1 versus T0 QC status (estimated, no_sustained_crossing or non-evaluable).
+FBS_sensitivity	FBS T1 versus T0: Predicted efficacy at the sustained binned log₂FC≤−1 crossing. 
+FBS_sensitivity_status	FBS T1 versus T0 QC status (estimated, no_sustained_crossing or non-evaluable).
+sensitivity_status_pair	Classification of the MH and FBS sensitivity statuses.
+MH_EK50	MH T1 versus T0: QC-passing fitted efficacy at half-maximal fitness response.
+MH_EK50_status	MH T1 versus T0 fit QC outcome. 
+FBS_EK50	FBS T1 versus T0 QC-passing fitted efficacy at half-maximal fitness response. 
+FBS_EK50_status	FBS T1 versus T0 fit QC outcome.
+EK50_status_pair	Classification of the MH and FBS EK50 statuses.
+Column definitions: KEGG_MH_vs_FBS_Fig2H	
+pathway_term	KEGG pathway name.
+n_genes_in_pathway	Number of distinct PAO1 loci assigned to the pathway in the supplied KEGG annotation.
+n_genes_with_MH_FBS_fitness	Number of pathway genes with finite fitness estimates in both MH and FBS.
+median_MH_medLFC	Median MH-versus-T0 gene fitness effect within the pathway (median adjusted full-match-guide log₂ fold change).
+median_FBS_medLFC	Median FBS-versus-T0 gene fitness effect within the pathway  (median adjusted full-match-guide log₂ fold change).
+median_direct_FBS_vs_MH_medLFC	Median of the direct FBS-versus-MH gene effects within the pathway (median adjusted full-match-guide log₂ fold change).
+n_genes_direct_significant	Number of pathway genes meeting the direct Stouffer criteria: raw p < {{p_stouffer}} and |medLFC| ≥ {{lfc_cut}}.
+pathway_delta_FBS_minus_MH	median_FBS_medLFC − median_MH_medLFC; difference between the two pathway medians.
+p_gsea	pathway Gene Set Enrichment Analysis (GSEA) p-value.
+FDR_gsea	Pathway-level multiple-testing-adjusted GSEA p-value.
+ES	GSEA enrichment score.
+NES_gsea	Normalized enrichment score for the FBS-minus-MH ranking. Positive values indicate higher FBS-minus-MH effects and greater depletion in MH; negative values indicate the reverse.
+leadingEdge	Leading-edge genes contributing to the GSEA signal.

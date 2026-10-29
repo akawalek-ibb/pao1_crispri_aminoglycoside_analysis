@@ -1,0 +1,10 @@
+condition	shift	timing	experiment	rep	verbose	drug	dose
+B3_1-T1_MH	MH	T1	tube	1	None	None	0
+B3_2-T1_MH	MH	T1	tube	2	None	None	0
+B3_3-T1_MH	MH	T1	tube	3	None	None	0
+B3_22-T1_FBS	MH	T1	tube	1	FBS	FBS	60
+B3_23-T1_FBS	MH	T1	tube	2	FBS	FBS	60
+B3_24-T1_FBS	MH	T1	tube	3	FBS	FBS	60
+B3_25-T0_MH	MH	T0	tube	1	None	None	0
+B3_26-T0_MH	MH	T0	tube	2	None	None	0
+B3_27-T0_MH	MH	T0	tube	3	None	None	0

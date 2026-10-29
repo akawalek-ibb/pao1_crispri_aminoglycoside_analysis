@@ -1,0 +1,77 @@
+{
+  "expression": "../input/CRISPRi_silencing_RNAseq_log2_TPM.tsv",
+  "samples": "../input/CRISPRi_silencing_RNAseq_iModulon_samples.tsv",
+  "expression_index_column": "gene_id",
+  "input_units": "log2_TPM",
+  "input_pseudocount": 1,
+  "M": "../../../annotation_input/precise411-M.csv",
+  "M_index_column": "gene_id",
+  "imodulon_table": "../../../annotation_input/precise411-im_table.csv",
+  "M_thresholds": "../../../annotation_input/precise411-M_thresholds.csv",
+  "control_group": "control1",
+  "center_column": null,
+  "categorical_covariates": [],
+  "numeric_covariates": [],
+  "contrasts": [
+    {
+      "id": "control1_TOB_vs_control1",
+      "label": "TOB treatment",
+      "weights": {
+        "control1_TOB": 1,
+        "control1": -1
+      }
+    },
+    {
+      "id": "ftsZg1m4_vs_control1",
+      "label": "ftsZ silencing",
+      "weights": {
+        "ftsZg1m4": 1,
+        "control1": -1
+      }
+    },
+    {
+      "id": "atpIg1m2_vs_control1",
+      "label": "atpI silencing",
+      "weights": {
+        "atpIg1m2": 1,
+        "control1": -1
+      }
+    },
+    {
+      "id": "accCg1m3_vs_control1",
+      "label": "accC silencing",
+      "weights": {
+        "accCg1m3": 1,
+        "control1": -1
+      }
+    },
+    {
+      "id": "secAg1m3_vs_control1",
+      "label": "secA silencing",
+      "weights": {
+        "secAg1m3": 1,
+        "control1": -1
+      }
+    }
+  ],
+  "tobramycin_contrast": "control1_TOB_vs_control1",
+  "min_abs_delta": 5,
+  "fdr": 0.05,
+  "fdr_scope": "global",
+  "min_gene_overlap_fraction": 0.9,
+  "min_module_weight_fraction": 0.9,
+  "pinv_rcond": 1e-12,
+  "sensitivity_exclude_gene_ids": [],
+  "reference_A": null,
+  "reference_A_index_column": null,
+  "reference_samples": null,
+  "reference_contrasts": null,
+  "reference_null_dima": false,
+  "reference_project_column": "project_name",
+  "reference_condition_column": "condition",
+  "plots": true,
+  "heatmap_max_modules": 40,
+  "validation_top_modules": 6,
+  "validation_modules": [],
+  "output_dir": "../recomputed"
+}

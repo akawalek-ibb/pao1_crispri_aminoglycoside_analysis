@@ -1,0 +1,6 @@
+"batch"	"condition"	"display_label"	"n_genes_tested"	"n_negative_fitness"	"n_positive_fitness"	"n_significant_total"
+"B1"	"None_0_T1 - None_0_T0"	"B1 control T1 vs T0"	5459	524	19	543
+"B1"	"None_0_T2 - None_0_T0"	"B1 control T2 vs T0"	5459	624	170	794
+"B2"	"None_0_T1 - None_0_T0"	"B2 control T1 vs T0"	5436	476	3	479
+"B3"	"None_0_T1 - None_0_T0"	"B3 control T1 vs T0"	5489	513	8	521
+"B4"	"None_0_T1 - None_0_T0"	"B4 control T1 vs T0"	5451	430	1	431

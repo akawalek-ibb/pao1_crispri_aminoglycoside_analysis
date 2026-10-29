@@ -1,0 +1,14 @@
+name: ciao_design
+channels:
+  - defaults
+dependencies:
+  - python=3.8.12
+  - numpy=1.19.2
+  - pandas=0.25.3
+  - scipy=1.7.3
+  - scikit-learn=0.24.2
+  - biopython=1.76
+  - matplotlib=3.5.0
+  - regex=2021.11.2
+  - tqdm=4.62.3
+  - shap=0.39.0

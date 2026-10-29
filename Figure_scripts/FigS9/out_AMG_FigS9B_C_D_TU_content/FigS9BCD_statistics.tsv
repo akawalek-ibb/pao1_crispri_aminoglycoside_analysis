@@ -1,0 +1,13 @@
+"panel"	"analysis_level"	"metric"	"test"	"n"	"statistic"	"df"	"p_value"
+"FigS9B"	"gene"	"severity"	"Kruskal-Wallis"	608	135.914024504326	6	7.29227054019119e-27
+"FigS9B"	"gene"	"severity"	"Spearman"	608	-0.45830033153453	NA	6.62533782210537e-33
+"FigS9B"	"TU"	"severity"	"Kruskal-Wallis"	384	62.1543153602224	6	1.64113966242771e-11
+"FigS9B"	"TU"	"severity"	"Spearman"	384	-0.379674423786453	NA	1.29548373724353e-14
+"FigS9C"	"gene"	"sensitivity"	"Kruskal-Wallis"	399	25.7465118387526	5	9.9925093116549e-05
+"FigS9C"	"gene"	"sensitivity"	"Spearman"	399	-0.253548526511189	NA	2.85384218311415e-07
+"FigS9C"	"TU"	"sensitivity"	"Kruskal-Wallis"	221	7.36517126873139	5	0.194867467223023
+"FigS9C"	"TU"	"sensitivity"	"Spearman"	221	-0.152540947094738	NA	0.0233222477487591
+"FigS9D"	"gene"	"EK50"	"Kruskal-Wallis"	410	9.29150633986569	6	0.157835458343706
+"FigS9D"	"gene"	"EK50"	"Spearman"	410	-0.0926916040021585	NA	0.0607692774468903
+"FigS9D"	"TU"	"EK50"	"Kruskal-Wallis"	223	2.93382261912939	6	0.817105812387684
+"FigS9D"	"TU"	"EK50"	"Spearman"	223	-0.0514768358074455	NA	0.444330915203146

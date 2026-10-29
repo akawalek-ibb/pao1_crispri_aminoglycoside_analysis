@@ -1,0 +1,39 @@
+{
+  "fasta_sha256": "c8d0528f907b49ba3af6598f49230ab7455b3f3a8a0c93c689a6cd9ee5674dad",
+  "gff_sha256": "f65caa9fc9ac5997af3689156b68bc8f2b4d5a6c96796e79c5e7da8661dde436",
+  "predictor_sha256": "0b0ae9b38d8489993142baf2d9b503f23b4d60dbf399212c740d02662bf19aea",
+  "models": {
+    "CRISPRi_headers.sav": "0e4cf56a486705ad7a140ab20f6a476edbdfb067358e5bbf6f0a7b157415abbe",
+    "CRISPRi_model.sav": "04bf43713d1ed8f89b016d1de16e9be11b259e2af8b7beebf6e6e694a8ad453d"
+  },
+  "python": "3.8.12 (default, Oct 12 2021, 13:49:34) \n[GCC 7.5.0]",
+  "packages": {
+    "numpy": "1.19.2",
+    "pandas": "0.25.3",
+    "scikit-learn": "0.24.2",
+    "biopython": "1.76",
+    "regex": "2021.11.2",
+    "matplotlib": "3.5.0",
+    "tqdm": "4.62.3",
+    "shap": "0.39.0"
+  },
+  "rnafold_version": "RNAfold 2.1.9h",
+  "biotype": "all",
+  "min_gc": 30,
+  "max_gc": 85,
+  "if_promoter": 0,
+  "rna_tools": {
+    "RNAduplex2.1.9h": {
+      "path": "/usr/local/bin/RNAduplex2.1.9h",
+      "sha256": "7e2c989e631899bbe72a0c5fa63c0cff0626eccdb7b68037ff15d12b2cb56f9f"
+    },
+    "RNAduplex2.4.14": {
+      "path": "/usr/local/bin/RNAduplex2.4.14",
+      "sha256": "7e2c989e631899bbe72a0c5fa63c0cff0626eccdb7b68037ff15d12b2cb56f9f"
+    },
+    "RNAfold": {
+      "path": "/usr/local/bin/RNAfold",
+      "sha256": "bb1c50c9c12c0e85817b4174efd835b4539bbb50b6a0a968bec0dfe1a95ffc7e"
+    }
+  }
+}

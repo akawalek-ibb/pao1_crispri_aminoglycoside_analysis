@@ -1,0 +1,6 @@
+parameter	value
+detection_min_reads	1
+cloned_mean_T0_min_reads	10
+count_source	preprocessing_scripts/out_09_AMG_export_GEO_raw_counts/CRISPRi_guide_raw_counts.tsv.gz
+count_source_md5	3bd3127ec28dd2b0a080aa4d817ca3dc
+missing_count_entries	52627

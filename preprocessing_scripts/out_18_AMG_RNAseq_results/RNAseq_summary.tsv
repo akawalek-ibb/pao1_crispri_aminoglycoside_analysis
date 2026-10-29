@@ -1,0 +1,6 @@
+"comparison_id"	"contrast_label"	"plot_order"	"n_rows"	"n_tested"	"n_Up"	"n_Down"	"n_FDR_only"	"n_at_FC_boundary"
+"atpI"	"atpI silencing"	1	5646	5646	100	61	909	0
+"accC"	"accC silencing"	2	5646	5646	435	252	2777	0
+"secA"	"secA silencing"	3	5646	5646	610	318	3110	0
+"ftsZ"	"ftsZ silencing"	4	5646	5646	126	52	963	0
+"TOB"	"TOB treatment"	5	5646	5646	14	50	251	0

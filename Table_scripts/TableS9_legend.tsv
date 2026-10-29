@@ -1,0 +1,36 @@
+field	description
+Supplementary Table S9. RNA-seq expression changes, GO enrichment and iModulon analyses following CRISPRi-mediated gene repression or tobramycin exposure.	
+	RNA-seq after repression by g_atpI1-m2, g_accC1-m3, g_secA1-m3 or g_ftsZ1-m4, or TOB exposure, each versus the induced, untreated non-targeting control. 
+Worksheets	
+RNAseq_all	Differential expression analysis results of the effect of CRISPRi knockdowns or TOB.
+Figure6D	Data for {{n_selected_terms}} selected GO terms across the four knockdowns, with separate Up and Down ORA statistics and contributing genes.
+GO_ORA_all	GO terms overrepresented among significantly upregulated or downregulated genes.
+GO_GSEA_all	GO enrichment across the full ranked list of tested genes, and the genes contributing most to each enrichment (leading-edge genes).
+iModulon_all	{{n_modules}} PRECISE411 iModulon activities across {{n_comparisons}} transcriptome comparisons.
+Methods and remarks	
+DEGs (differentially expressed genes) 	Gene FDR < {{DE_FDR}} and |log₂FC| > {{DE_FC}}. Up: log₂FC > {{DE_FC}}; Down: log₂FC < −{{DE_FC}}.
+TOB comparison	Induced non-targeting control exposed to 0.4 µg/mL TOB for 3 h versus the induced, untreated control; three biological replicates per condition.
+GO annotation used	Consolidated PAO1 GO annotations including propagated ancestor terms. BP: biological process; MF: molecular function; CC: cellular component.
+GO ORA	One-sided hypergeometric tests (gene-set sizes {{ORA_MIN}}–{{ORA_MAX}}), equivalent to the original clusterProfiler::enricher analysis. BH correction was applied separately within each comparison, DEG direction and GO domain, across returned query-overlapping terms. Backgrounds were tested, GO-annotated genes: {{ORA_backgrounds}}. Query sizes (Up/Down for {{ORA_ontologies}}): {{ORA_queries}}.
+GO GSEA	Ranked GO enrichment used fgsea with BH correction separately for each comparison and GO domain. Genes were ranked by sign(log₂FC) × √LR from edgeR; GO terms represented by {{GSEA_MIN}}–{{GSEA_MAX}} ranked genes were tested.
+iModulon estimation	Activities were estimated upstream using PRECISE411 gene weights. Condition differences were tested by linear models, with 95% confidence intervals and global BH correction across {{n_tests}} tests (q_primary). Estimates and q-values are preserved here.
+DiMA / selected_for_Fig6C	DiMA identifies activity changes with q_primary < {{DiMA_Q}}, |delta_activity| > {{DiMA_delta}} and adequate projection coverage. Figure 6C shows all five comparisons for modules meeting these criteria in at least one comparison.
+Figure 6D display	Up enrichment is positive/red and Down enrichment negative/blue (FDR < {{display_FDR}}). The smaller directional FDR selects the displayed direction; colour magnitude is capped at {{display_cap}}. Both directional statistics are retained. The background is shared across knockdowns within each GO domain.
+Column definitions	
+RNA-seq log2FC / FDR / P value	Gene-level log₂ fold change, adjusted differential-expression p-value and nominal p-value for each comparison.
+Comparison / contrast_label	Knockdown or TOB treatment versus the induced, untreated non-targeting control.
+GO domain / GO ID / GO term	BP: biological process; MF: molecular function; CC: cellular component. GO ID and GO term give the official accession and description.
+DEG direction	Upregulated or downregulated DEG query (used for ORA).
+P value / FDR (BH)	Nominal GO enrichment p-value and BH-adjusted p-value using the correction groups described above.
+Count	Number of query DEGs overlapping the GO term.
+BgRatio	GO-term background-gene count divided by the relevant annotated background size.
+FoldEnrichment	(Count / annotated query size) divided by BgRatio. Query sizes are listed above.
+NES	Normalized GSEA enrichment score. Positive/negative values indicate enrichment toward higher/lower transcript abundance in the ranked comparison.
+Gene-set size	Number of ranked, GO-annotated genes belonging to the tested term.
+Overlapping / leading-edge genes	PAO1 locus IDs and corresponding gene names for ORA overlaps or the GSEA leading edge.
+Figure6D Up / Down fields	Count: term-overlapping DEGs; GeneRatio: Count divided by the annotated query size; FDR: directional ORA-adjusted p-value. Result records whether enrichment was returned; gene IDs/names identify the contributors.
+module_id / category / function_description	PRECISE411 module identifier and original functional annotations.
+n_reference_members	Number of genes in the reference thresholded iModulon membership.
+delta_activity	Estimated activity difference versus control on the native reference scale. Note that the sign follows reference gene weights and need not match the expression direction of the annotated regulator or its targets.
+ci95_low / ci95_high	Lower and upper bounds of the model-based 95% confidence interval for delta_activity.
+p_value / q_primary	Nominal activity-test p-value and global BH-adjusted p-value across the {{n_tests}} iModulon tests.

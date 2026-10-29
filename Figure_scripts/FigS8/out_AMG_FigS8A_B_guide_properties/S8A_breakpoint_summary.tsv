@@ -1,0 +1,2 @@
+estimated_breakpoint_bp	bootstrap_median_breakpoint_bp	bootstrap_95CI_lower_bp	bootstrap_95CI_upper_bp	slope_before_breakpoint	slope_after_breakpoint	weighted_rss	n_guides	n_genes	n_successful_bootstraps	n_requested_bootstraps
+95	95	80	160	0.00902900293730946	-0.000127475441108019	2410.67424403545	7780	743	500	500

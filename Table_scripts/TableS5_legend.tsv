@@ -1,0 +1,52 @@
+field	description
+Supplementary Table S5	Genetic determinants of competitive fitness in antibiotic-free medium.
+Worksheets	Content
+MH_fitness	Effects of gene repression on competitive fitness in antibiotic-free MH medium, including effect sizes, p values and calls for reduced or increased fitness.
+Essentiality_membership	Membership of {{n_membership}} PAO1 genes in the negative-fitness set identified here and the three published reference sets (Fig. 2D).
+Gene_numbers	Numbers of genes tested and showing reduced or increased fitness in each of the five comparisons in antibiotic-free MH medium.
+MH_vulnerability	Gene vulnerability to repression in antibiotic-free MH medium, summarized across four T1 comparisons, one per batch. B1 T2 is excluded.
+Methods and remarks	
+Untreated fitness calls	Negative: raw Stouffer p < {{p_stouffer}} and medLFC ≤ −{{lfc_cut}}. Positive: raw p < {{p_stouffer}} and medLFC ≥ {{lfc_cut}}. Calls include T1 versus T0 in B1–B4 and T2 versus T0 in B1.
+Effect interpretation	medLFC is the median control-adjusted log₂ fold change of full-match guides. Negative means depletion; positive means enrichment.
+Membership sources	Poulsen et al. (2019) core-essential set; Zhang et al. (2025) PA14 CRISPRi set mapped to PAO1; Kaczmarczyk et al. (2025) PAO1 shared-fitness set; and this-study negative-fitness union.
+Column definitions: MH_fitness	
+PAO1_ID	PAO1 locus identifier.
+PA14_ID	PA14 ortholog locus identifier.
+gene_name	Reported gene symbol or locus-derived name.
+product_name	Gene-product annotation.
+category	Source essentiality/fitness annotation category (see Supplementary Table S2).
+design_call	Source library-design category  (see Supplementary Table S2).
+TU	Transcription-unit membership.
+CRISPRi_negative_fitness_union	TRUE if at least one of the five untreated comparisons has raw p < {{p_stouffer}} and medLFC ≤ −{{lfc_cut}}.
+CRISPRi_positive_fitness_union	TRUE if at least one of the five untreated comparisons has raw p < {{p_stouffer}} and medLFC ≥ {{lfc_cut}}.
+n_negative_comparisons	Number of untreated comparisons meeting the significant negative-fitness rule.
+n_positive_comparisons	Number of untreated comparisons meeting the significant positive-fitness rule.
+*_medLFC	Median control-adjusted full-match-guide log₂ fold change for the indicated comparison.
+*_p_stouffer	Raw gene-level Stouffer p-value for the indicated comparison, without subsequent multiple-testing adjustment.
+*_call	negative_fitness, positive_fitness or not_significant. A blank call indicates an untested comparison; missing effects and p-values remain unavailable.
+Column definitions: Essentiality_membership	
+PAO1_ID	PAO1 locus identifier.
+PA14_ID	PA14 ortholog locus identifier.
+gene_name	Reported gene symbol or locus-derived name.
+Poulsen_core	Membership in the Poulsen et al. (2019) core-essential set.
+Zhang_2025	Membership in the source Zhang et al. (2025) PA14 screen set after PAO1 ortholog mapping.
+This_study	Membership in the negative-fitness union from the five untreated comparisons in this study.
+Kaczmarczyk_2025	Membership in the 299-gene PAO1 set shared across LB, glucose and succinate in Kaczmarczyk et al. (2025); no added guide-coverage filter.
+Column definitions: Gene_numbers	
+batch	Experimental batch identifier (B1–B4).
+condition	Exact comparison. 
+display_label	Readable label for the experimental comparison.
+n_genes_tested	Number of genes evaluated in the indicated source comparison.
+n_negative_fitness	Number of significant negative-fitness genes in this comparison.
+n_positive_fitness	Number of significant positive-fitness genes in this comparison.
+n_significant_total	Number of genes with either significant negative or positive fitness in this comparison.
+Column definitions: MH_vulnerability	
+PAO1_ID	PAO1 locus identifier.
+PA14_ID	PA14 ortholog locus identifier.
+gene_name	Reported gene symbol or locus-derived name.
+control_median_severity	Median full-match-guide severity across the four untreated T1 comparisons (B1–B4). B1 T2 is excluded.
+control_median_sensitivity	Median predicted guide efficacy at which the fitness effect crossed the sustained log₂FC ≤ −1 threshold. Lower values indicate crossing at weaker predicted repression. Only batches with an estimated threshold contribute.
+control_median_EK50	Median fitted relative guide efficacy at half the fitted effect at efficacy 1 relative to zero. Reported when at least two T1 estimates pass quality criteria.
+n_control_severity_estimates	Number of finite severity estimates contributing to the T1 consensus.
+n_control_sensitivity_estimates	Number of numeric, estimated sensitivity values contributing to the T1 consensus.
+n_control_EK50_estimates	Number of valid T1 EK50 estimates, including a single estimate when the consensus is unavailable.
